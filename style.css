@@ -2,6 +2,9 @@
     background-color: #ff4c68;
 }
 #actuality{
+    background-color: #ffffff;
+}
+#blog{
     background-color: #ff4c68;
 }
 .img_actu{
@@ -113,4 +116,8 @@ h3{
     #title{
         text-align: center;
     }
+}
+.one-title{
+    padding: 50px;
+    text-align: center;
 }
