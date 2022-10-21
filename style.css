@@ -1,11 +1,23 @@
 #title{
     background-color: #ff4c68;
 }
+#actuality{
+    background-color: #ff4c68;
+}
+.img_actu{
+    width: 100%;
+}
 
 #footer{
     padding: 7%;
     text-align: center;
     background-color: #fff;
+}
+p{
+    font-family: 'Montserrat';
+}
+.about__data {
+    text-align: center;
 }
 
 h1{
