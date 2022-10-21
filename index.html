@@ -1,75 +1,106 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <title>Santé</title>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
-  
+
 </head>
 
 <body>
 
-  
+
   <section id="title">
 
-      <!-- Navbar -->
-  
-    <div class = conatiner-fluid>
-      <nav class = "navbar navbar-expand-lg navbar-dark" >
-      
-        <a class = "navbar-brand" href = "">Logo_Santé</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar -->
+
+    <div class=conatiner-fluid>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="">Logo_Santé</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class = "navbar-nav">
-            <li class = "nav-item"><a class = "nav-link" href = "#">Acccueil</a></li>
-            <li class = "nav-item"><a class = "nav-link" href = "#">Blog</a></li>
-            <li class = "nav-item"><a class = "nav-link" href = "#">Actualités</a></li>
-            <li class = "nav-item"><a class = "nav-link" href = "#">Forum</a></li>
-            <li class = "nav-item"><a class = "nav-link" href = "#">Contact</a></li>
-        </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Acccueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Actualités</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Forum</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
         </div>
-    </nav>
-  
-  
+      </nav>
+
+
       <!-- Title -->
-      <div class = "row">
-  
-        
-        
-        <div class = "col-lg-6">
+      <div class="row">
+
+
+
+        <div class="col-lg-6">
           <h1>On est en bonne santé quand on n'a pas à y penser.</h1>
-          <button type="button" class = "btn btn-primary btn-lg" > En savoir plus</button>
+          <button type="button" class="btn btn-primary btn-lg"> En savoir plus</button>
           <!-- <button type="button" class = "btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button> -->
         </div>
-        <div class = "col-lg-6 image">
-          <img class = "title-image" src="img/i_.jpg" alt="image!!!">
+        <div class="col-lg-6 image">
+          <img class="title-image" src="img/i_.jpg" alt="image!!!">
         </div>
-  
-      </div>  
-    </div>
-    
-      
-  </section>
-<section id="blog">
-  <div class="one-title">
-     <h2 style="font: 2em sans-serif;">Methodes Contraceptives</h2>
-     <img src="img/methodescontraceptives.PNG" alt="image contraceptive">
-  </div>
-  
-</section>
 
+      </div>
+    </div>
+
+
+  </section>
+  <section id="blog">
+    <div class="one-title">
+      <h2 style="font: 2em sans-serif;">Methodes Contraceptives</h2>
+      <p>methode mecanique</p>
+      <img src="img/methodescontraceptives.PNG" alt="image contraceptive">
+    </div>
+
+  </section>
+<section id="contact">
+
+  <form action="" id="form">
+    <div style="width: 40%;margin: auto; padding: 60px;">
+      <h3 style= "text-align: center;">Contactez Nous</h3>
+        <div class="form-group">
+            <label for="prenom">Prenom</label>
+            <input type="prenom" class="form-control" id="prenom" placeholder="prenom" name="prenom">
+        </div>
+        <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="nom" class="form-control" id="nom" placeholder="Nom" name="nom">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="telephone">Telephone</label>
+            <input type="telephone" class="form-control" id="telephone" placeholder="Telephone" name="telephone">
+        </div><br>
+        <div class="form-group">
+            <input id="btn" type="submit" value="Envoyer" style="background-color: green; margin-left: 100px; border-radius: 20px; width: 50%; height: 40px;" onclick="Ajouter()">
+        </div>
+    </div>
+</form>
+<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.207049454749!2d-1.5729033!3d47.2125309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0fcda6c4cb%3A0xd620ca38dafa1e9a!2s2+Rue+La+Motte+Picquet%2C+44100+Nantes!5e0!3m2!1sfr!2sfr!4v1423244007186" width="1500" height="450" frameborder="0"></iframe>
+</section>
   <!-- Footer -->
 
   <footer id="footer">
@@ -78,7 +109,7 @@
     <i class="copyright-icon fab fa-instagram"></i>
     <i class="copyright-icon fas fa-envelope"></i>
 
-    <p class = "cta-p">© Copyright 2022 - Hackatlon Bakeli</p>
+    <p class="cta-p">© Copyright 2022 - Hackatlon Bakeli</p>
 
   </footer>
 
@@ -86,4 +117,3 @@
 </body>
 
 </html>
-
