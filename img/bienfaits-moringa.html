@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html class="no-js doc-rubric-nutrition" lang="fr">
+<head prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb# article:http://ogp.me/ns/article#">
+    <script>
+  window.gdprAppliesGlobally=true;
+  (function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
+  else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
+    var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
+    if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
+    var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("1c7a6a97-5c7c-4b1d-8ea2-9ffa2349a26b")})();
+</script>
+
+    <script type="text/javascript">
+        !function(o,r){var d=o.Didomi||{},t=!1,a=!1,l=!1,s=!1,c="",u="multiple didomi-buttons didomi-popup-notice-buttons",n="buttons",p="style",m="form",i=o.console||{log:function(e){}},f=function(){},v={wall_active:!0};function g(){f=!1,r.getElementById("didomi-host").remove();var e=r.getElementById("old-didomi-host");e.setAttribute("id","didomi-host"),e.style.display="block",d.notice.show("informations")}function y(){return"<div class='didomi-popup-notice-logo-container'><img class='didomi-popup-notice-logo' alt='Logo' src='"+d.getConfig().app.logoUrl+"'></div>"}function b(e){e=Object.assign({id:"X",defaultClasses:"didomi-components-button didomi-button standard-button",class:"",content:"OK",disabled:!1},e);return e.class=e.defaultClasses+" "+e.class,e.disabled=e.disabled?"disabled":"","<button id='"+e.id+"' class='"+e.class.trim()+"' "+e.disabled+"><span>"+e.content+"</span></button>"}function h(){r.getElementById("old-didomi-host")||(t=r.getElementById("didomi-host"),(i=r.createElement("div")).setAttribute("id","didomi-host"),i.setAttribute("unifywall",!0),i.innerHTML=t.innerHTML,(e=i.querySelector(".didomi-popup-view"))&&(e.id="unify_wall_content",t.setAttribute("id","old-didomi-host"),t.style.display="none",r.body.insertBefore(i,r.getElementById("old-didomi-host")),r.body.classList.add("didomi-popup-open"),setTimeout(function(){r.body.classList.add("didomi-popup-open")},200),f=!1));var e=r.getElementById("unify_wall_content");if(e){var t={id:"unify-accept-finally",class:"didomi-button-highlight",content:v.btn_accept_finally},i={id:"unify-goto-subscribe",class:"didomi-button-highlight",content:v.btn_abo_text};return e.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'>"+v.paywall_text+"<div id='"+n+"' class='"+u+"'>"+b(t)+b(i)+"</div></div></div>",e.querySelector("#unify-accept-finally").addEventListener("click",function(){g(),d.setUserAgreeToAll(),r.body.classList.remove("didomi-popup-open")}),e.querySelector("#unify-goto-subscribe").addEventListener("click",function(){_()}),f=!1,1}}function _(){var o=r.getElementById("unify_wall_content");if(!o)return!1;var e=v.legal_text_full.split("</p>",1)[0]+"</p>",t={id:"unify-pay",class:"didomi-button-highlight",content:"Confirmer",disabled:0==c.trim().length};o.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><div class='didomi-popup-title'>"+v.prepayment_title+"</div><"+m+" action='/?payment' method='post' id='prepayment-form'><div class='didomi-popup-form-row'><div class='didomi-field-container didomi-field-container-2'><input type='email' name='email' value='"+c+"' placeholder='Adresse e-mail*' aria-label='Adresse e-mail' required /></div><div><small>* champ obligatoire</small></div></div><div class='didomi-popup-form-row'><p><strong>"+v.legal_text_title+"</strong></p>"+e+"<p "+p+"='margin-top:-5px; text-align:center'><svg id='unify-see-legal-screen' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 452' "+p+"='width:20px;margin:0 auto;cursor:pointer'><path fill='"+d.getConfig().theme.color+"' d='m226 355c-8 0-16-3-22-9l-194-194c-12-12-12-32 0-45 12-12 32-12 45 0l172 172 172-172c12-12 32-12 45 0 12 12 12 32 0 45l-194 194c-6 6-14 9-22 9z'/></svg></p></div><div class='"+u+"'>"+b({id:"unify-goback",content:"Retour"})+b(t)+"</div></"+m+"></div></div>",o.querySelector("#unify-goback").addEventListener("click",function(e){e.preventDefault(),o.querySelector("input[name=email]").remove(),h()}),o.querySelector("#unify-pay").addEventListener("click",function(e){i(),e.preventDefault(),o.querySelector("input[name=email]").remove(),w()}),o.querySelector("#unify-see-legal-screen").addEventListener("click",function(e){i(),e.preventDefault(),o.querySelector("input[name=email]").remove(),function(){var e=r.getElementById("unify_wall_content");if(!e)return;e.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><p><strong>"+v.legal_text_title+"</strong></p>"+v.legal_text_full+"<p "+p+"='margin-top:-5px; text-align:center; transform:rotate(180deg)'><svg class='unify-goback' id='unify-see-legal-screen-back' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 452 452' "+p+"='width:20px;margin:0 auto;cursor:pointer'><path fill='"+d.getConfig().theme.color+"' d='m226 355c-8 0-16-3-22-9l-194-194c-12-12-12-32 0-45 12-12 32-12 45 0l172 172 172-172c12-12 32-12 45 0 12 12 12 32 0 45l-194 194c-6 6-14 9-22 9z'/></svg></p></div></div>",e.querySelectorAll(".unify-goback").forEach(function(e){e.addEventListener("click",_)}),f=!1}()});var i=function(e){var t=o.querySelector("input[name=email]"),i=t.checkValidity(),n=o.querySelector("#unify-pay");i&&(c=t.value,n.removeAttribute("disabled")),i||n.hasAttribute("disabled")||n.setAttribute("disabled","disabled")};return o.querySelector("input[name=email]").addEventListener("keyup",i),o.querySelector("input[name=email]").addEventListener("onblur",i),l||S(function(){}),!(f=!1)}function x(e){e=e||"Merci de réitérer ultérieurement",o.clearTimeout(a);var t=r.getElementById("unify_wall_content");if(!t)return!1;t.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' "+p+"='text-align:center'><div class='didomi-popup-title'>Désolé...</div><p>Une erreur s'est produite : <em>"+e+"</em></p></div></div>",f=!1}function w(){var t=r.getElementById("unify_wall_content");if(!t)return!1;if((i=r.getElementById("unify_wall_content"))&&(i.scrollHeight,i.scrollWidth,i.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' "+p+"='text-align:center'><"+p+'>.unifywall-loader-icon {display: block;width: 80px;height: 80px;margin-left: auto;margin-right: auto;}.unifywall-loader-icon:after {content: " ";display: block;width: 64px;height: 64px;margin: 8px;border-radius: 50%;border: 6px solid '+d.getConfig().theme.color+";border-color: "+d.getConfig().theme.color+" transparent "+d.getConfig().theme.color+" transparent;animation: unifywall-loader-icon 1.2s linear infinite;}@keyframes unifywall-loader-icon {0% { transform: rotate(0deg);}100% { transform: rotate(360deg);}}</"+p+"><div class='unifywall-loader-icon'></div><span class='didomi-popup-notice'>Chargement en cours...</span></div></div>",o.clearTimeout(a),a=o.setTimeout(function(){return x("temps d'attente dépassé")},2e4),f=!1),l){if(!s)return f=!1,void function t(i,e){if(!e){var n=k("create_intent");return void L(n,function(e){t(i,e)})}if("object"!=typeof e||!("status"in e))return void x();if("success"!==e.status)return void x();s=e.intent.client_secret;i();return}(w);o.clearTimeout(a);var e={id:"unify-pay",class:"didomi-button-highlight",content:v.btn_pay_text,disabled:!0};t.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text'><div class='didomi-popup-title'>S'abonner à <span>"+d.getConfig().app.name+"</span></div><div class='didomi-popup-arguments'>"+v.arguments_text+"</div><"+m+" action='/?payment' method='post' id='payment-form'><div id='card-errors' role='alert'></div><div class='didomi-popup-form-row'><label for='card-number'>&#x1F512; Informations de la carte*</label><div class='didomi-field-container'><div id='card-number'></div><div id='card-expiry'></div><div id='card-cvc'></div></div><div><small>* champs obligatoires</small></div></div><div class='didomi-popup-form-row'>"+v.payment_legal_text+"</div><div class='"+u+"'>"+b({id:"unify-goback",content:"Retour"})+b(e)+"</div></"+m+"></div></div>",t.querySelector("#unify-goback").addEventListener("click",_);var i=l.elements(),e={base:{color:"#3F3735",fontWeight:500,fontSize:"15px",fontSmoothing:"antialiased","::placeholder":{color:"#CFD7DF"},":-webkit-autofill":{color:"#e39f48"}},invalid:{color:"#E25950","::placeholder":{color:"#FFCCA5"}}},n=i.create("cardNumber",{style:e,showIcon:!0,placeholder:"Numéro de carte"});n.mount("#card-number"),i.create("cardExpiry",{style:e}).mount("#card-expiry");e=i.create("cardCvc",{style:e});return e.mount("#card-cvc"),e.on("change",function(e){t.querySelector("#unify-pay").disabled=!e.complete,t.querySelector("#card-errors").textContent=e.error?e.error.message:""}),t.querySelector("#payment-form").addEventListener("submit",function(e){e.preventDefault(),t.querySelector("#unify-pay").disabled=!0,t.querySelector("#unify-pay span").innerHTML="Vérifications en cours",l.confirmCardPayment(s,{payment_method:{card:n,billing_details:{email:c}}}).then(C)}),!(f=!1)}S(w)}function C(e){var t,i=null;"object"!=typeof e?i="Une erreur innattendue est survenue":e.error?i=e.error.message:"paymentIntent"in e&&"status"in e.paymentIntent&&"succeeded"==e.paymentIntent.status||(i="Ce paiement a été refusé, veuillez vérifier vos informations bancaires"),i?(o.document.querySelector("#unify-pay span").innerHTML=v.btn_pay_text,t=i,(i=r.getElementById("card-errors"))&&(i.textContent=t)):L(k("check_and_grant_access",{stripe_client_secret:e.paymentIntent.id}),function(e){return(!(e&&"object"==typeof e&&"status"in e&&"success"===e.status)?x:function(){var e=r.getElementById("unify_wall_content");if(!e)return;e.innerHTML=y()+"<div class='didomi-popup-notice-text-container'><div class='didomi-popup-notice-text' "+p+"='text-align:center'><div "+p+"='width:80px;margin: 0 auto 20px'><svg viewBox='0 0 44 44' xmlns='http://www.w3.org/2000/svg'><path d='M42.833 7.792L19.062 31.584l-8.833-8.833 2.937-2.938 5.896 5.896L39.895 4.876l2.937 2.917zm-4.604 10.5c.27 1.188.437 2.438.437 3.708 0 9.209-7.458 16.667-16.667 16.667S5.332 31.21 5.332 22 12.791 5.333 22 5.333c3.292 0 6.334.959 8.917 2.605l3-3a20.625 20.625 0 00-11.917-3.771C10.499 1.167 1.166 10.5 1.166 22s9.333 20.833 20.833 20.833S42.832 33.499 42.832 22c0-2.48-.458-4.854-1.25-7.063l-3.354 3.354z' fill='"+d.getConfig().theme.color+"' fill-rule='nonzero' stroke='#fff' stroke-width='1.5'/></svg></div><div class='didomi-popup-title'>Votre paiement a bien été enregistré.</div><p><span>Vous allez recevoir un e-mail de confirmation dans quelques instants.</span></p><div id='"+n.split("").join("")+"' class='"+u+"'>"+b({id:"btn-close-confirm-payment",class:"didomi-button-highlight",content:"Je commence à naviguer"})+"</div></div></div>",e.querySelector("#btn-close-confirm-payment").addEventListener("click",function(){g(),d.setUserDisagreeToAll(),r.body.classList.remove("didomi-popup-open")}),f=!1})()})}function e(){var e=r.getElementById("didomi-host");o.MutationObserver&&!t&&(t=new MutationObserver(function(e){e=e.filter(function(e){return 0<e.addedNodes.length&&e.target.className.includes("notranslate")}),e=e.filter(function(e){return e.target.className.includes("notranslate")});0<e.length&&f&&f()}),e.setAttribute("unify_wall",!0),t.observe(e,{childList:!0,subtree:!0}))}function q(){var e,t;for(e in v.required_purposes_ids){var i=v.required_purposes_ids[e];if(!1===d.getUserConsentStatusForPurpose(i))return!1}for(t in v.required_vendors_ids){var n=v.required_vendors_ids[t];if(!1===d.getUserConsentStatusForVendor(n))return!1}return!0}function S(e){var t=r.createElement("script");t.type="text/javascript",t.src="https://js.stripe.com/v3/",t.onload=function(){l=Stripe(v.stripe_publishable_key,{locale:"fr"}),e()},o.document.head.appendChild(t)}function L(e,t){var i=new XMLHttpRequest;i.onreadystatechange=function(){var e;i.readyState==XMLHttpRequest.DONE&&(e=JSON.parse(i.responseText),t(e))},i.ontimeout=function(){return x("Délai d'attente dépassé")},i.onerror=function(e){t(!0)},i.open("POST",e),i.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),i.withCredentials=!0,i.send()}function k(e,t){var i=v.stripe_proxy_url;if(i+=i.includes("?")?"&":"?",i+="action="+e,t)for(var n in t)i+="&"+n+"="+encodeURIComponent(t[n]);return i}o.didomiConfig=o.didomiConfig||{},o.didomiConfig.notice=o.didomiConfig.notice||{},"enable"in o.didomiConfig.notice&&!1===o.didomiConfig.notice.enable||(!0!=!!r.cookie.split("; ").find(function(e){return e.startsWith("unifywall_paid=")})?(o.didomiConfig.notice.enable=!0,o.didomiOnReady=o.didomiOnReady||[],o.didomiOnReady.push(function(){d=o.Didomi||{},0!=function(){0 in d.getConfig();0 in d.getConfig().custom;(v=Object.assign({},v,d.getConfig().custom.unify_wall)).debug&&v.debug;if(0<["wall_active","paywall_text","btn_abo_text","btn_accept_finally","required_purposes_ids","required_vendors_ids","stripe_publishable_key","stripe_proxy_url","prepayment_title","legal_text_title","legal_text_full","arguments_text","payment_legal_text","btn_pay_text"].reduce(function(e,t){return t in v?e:(i.error("-> Unify Wall: Missing mandatory variable "+t),e+1)},0))return!1;return!0}()&&v.wall_active&&(0==d.notice.isVisible()&&0==q()&&0==d.shouldConsentBeCollected()&&(e(),f=function(){h()},d.notice.show("informations")),d.on("notice.clickdisagree",function(){f=function(){h()},h()}),d.on("preferences.clickdisagreetoall",function(){e(),f=function(){h()},d.preferences.hide(),d.notice.show("informations")}),d.on("preferences.clicksavechoices",function(){0==q()&&(e(),f=function(){h()},d.preferences.hide(),d.notice.show("informations"))}),d.on("notice.shown",function(){}))})):o.didomiConfig.notice.enable=!1)}(window,document);
+
+    </script>
+
+    <title>Moringa : bienfaits nutritionnels et conseils pour le consommer - Doctissimo</title>
+
+    <link rel="preconnect" href="https://cdn.permutive.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://stats.g.doubleclick.net" />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+
+            <link rel="preconnect" href="https://cdn.prod.docfr.doc-media.fr" />
+        <link rel="preconnect" href="https://cdn.prod.docfr.doc-media.fr" crossorigin />
+    
+            <link rel="preconnect" href="https://resize.prod.docfr.doc-media.fr" />
+    
+            
+<meta charset="utf-8"/>
+<meta name="viewport"                       content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="description"                    content="Le moringa est un arbre originaire d’Inde utilisé dans les programmes de lutte contre la malnutrition pour ses vertus nutritionnelles exceptionnelles. Découvrez les bienfaits de ce superaliment." />
+<meta name="keywords"                       content="moringa, bienfaits moringa, feuilles de moringa, plante moringa" />
+<meta name="author"                         content="Doctissimo"/>
+
+<meta property="og:title"                   content="Les bienfaits du moringa" />
+<meta property="og:description"             content="Le moringa est un arbre originaire d’Inde utilisé dans les programmes de lutte contre la malnutrition pour ses vertus nutritionnelles exceptionnelles. Découvrez les bienfaits de ce superaliment." />
+<meta property="og:type"                    content="article" />
+<meta property="og:url"                     content="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa" />
+<meta property="og:site_name"               content="Doctissimo" />
+<meta property="og:image"                   content="https://resize.prod.docfr.doc-media.fr/rcrop/1200,675,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg" />
+<meta property="og:image:width"             content="1200"/>
+<meta property="og:image:height"            content="675"/>
+<meta property="og:locale"                  content="fr_FR"/>
+
+<meta property="fb:app_id"                  content="290600267704798" />
+<meta name="facebook-domain-verification"   content="no6odwazkf1aogs2vac6pjsz817ikb" />
+
+<meta name="twitter:title"                  content="Les bienfaits du moringa" />
+<meta name="twitter:description"            content="Le moringa est un arbre originaire d’Inde utilisé dans les programmes de lutte contre la malnutrition pour ses vertus nutritionnelles exceptionnelles. Découvrez les bienfaits de ce superaliment." />
+<meta name="twitter:card"                   content="summary" />
+<meta name="twitter:site"                   content="@doctissimo" />
+<meta name="twitter:image"                  content="https://resize.prod.docfr.doc-media.fr/rcrop/1200,675,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg" />
+<meta name="twitter:url"                    content="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa" />
+<meta name="twitter:domain"                 content="doctissimo.fr" />
+
+    <meta name="apple-itunes-app" content="app-id=850438927, affiliate-data=at=10lxMt">    <meta name="apple-itunes-app" content="app-id=550460079, affiliate-data=at=10lxMt">    <meta name="apple-itunes-app" content="app-id=324685957, affiliate-data=at=10lxMt">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5053ff"/>
+
+<meta name="verify-v1"                      content="J3d60lX02f3NLFkGPztWLXcM2PFErfCVdnd+4+7jw/A=" />
+<meta name="robots"                         content="index, follow" />
+<meta name="robots"                         content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="application-name"               content="Doctissimo" />
+
+<meta name="theme-color"                    content="#ffffff"/>
+<meta name="msapplication-TileColor"        content="#ffffff"/>
+<meta name="msapplication-config"           content="/browserconfig.xml"/>
+<meta name="msapplication-tooltip"          content="Santé et bien être avec Doctissimo" />
+<meta name="msapplication-window"           content="width=1024;height=768" />
+<meta name="msapplication-navbutton-color"  content="#5053ff" />
+
+<meta name="p:domain_verify"                content="92002e2d669f4518a5dd6492da1ff93d" />
+
+<meta name='dailymotion-domain-verification' content='dmywv9gdgl5icl5cz' />
+
+    <meta property="article:section" content="Les secrets des aliments santé" />
+    <meta property="article:tag" content="moringa, bienfaits moringa, feuilles de moringa, plante moringa" />
+    <meta property="article:published_time" content="2018-09-13T16:42:54.000Z" />
+    <meta property="article:modified_time" content="2018-09-13T16:42:54.000Z" />
+                    <meta property="article:author" content="Jessica Xavier" />
+    
+            <link rel="canonical" href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa" />
+
+    
+                
+
+
+
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+                                    {
+                "@type": "ListItem",
+                "position": 1,
+                                "name": "Accueil",
+                "item": "https://www.doctissimo.fr"
+            }
+                                ,             {
+                "@type": "ListItem",
+                "position": 2,
+                                "identifier": "f8686a24-d38d-4189-9216-378ed379c774",
+                                "name": "Nutrition",
+                "item": "https://www.doctissimo.fr/html/nutrition/nutrition.htm"
+            }
+                                ,             {
+                "@type": "ListItem",
+                "position": 3,
+                                "identifier": "03887c6d-79c0-49c6-8b8d-b5be4c3f5e68",
+                                "name": "Alimentation\u0020et\u0020sant\u00E9",
+                "item": "https://www.doctissimo.fr/html/nutrition/dossiers/sante_assiette_niv2.htm"
+            }
+                                ,             {
+                "@type": "ListItem",
+                "position": 4,
+                                "identifier": "526cea16-f5ba-4204-9cdf-627d74c0a32f",
+                                "name": "Bien\u0020manger\u0020pour\u0020\u00EAtre\u0020en\u0020bonne\u0020sant\u00E9",
+                "item": "https://www.doctissimo.fr/html/nutrition/dossiers/sante-assiette/niv2/bien-manger-bonne-sante.htm"
+            }
+                                ,             {
+                "@type": "ListItem",
+                "position": 5,
+                                "identifier": "30a38e0b-7554-4b6a-adba-da04d73b5caa",
+                                "name": "Les\u0020secrets\u0020des\u0020aliments\u0020sant\u00E9",
+                "item": "https://www.doctissimo.fr/html/nutrition/dossiers/allegations-sante-etiquettes/aliments-sante-alicaments.htm"
+            }
+                ]
+}
+</script>
+    
+    
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Les\u0020bienfaits\u0020du\u0020moringa",
+        "alternateName": "Les\u0020bienfaits\u0020du\u0020moringa",
+        "datePublished": "2018-07-20T10:10:00+02:00",
+        "dateModified": "2018-09-13T18:42:54+02:00",
+        "articlebody": "Le\u0020moringa\u0020oleifera,\u0020aussi\u0020appel\u00E9\u0020arbre\u0020de\u0020vie,\u0020est\u0020utilis\u00E9\u0020pour\u0020ses\u0020vertus\u0020nutritionnelles\u0020depuis\u0020des\u0020d\u00E9cennies\u0020par\u0020les\u0020ONG\u0020dans\u0020des\u0020plans\u0020de\u0020lutte\u0020contre\u0020la\u0020malnutrition.\u0020Chez\u0020nous,\u0020seuls\u0020quelques\u0020initi\u00E9s\u0020profitent\u0020de\u0020ses\u0020bienfaits.\u0020Armelle\u0020de\u0020Saint\u0020Sauveur,\u0020pionni\u00E8re\u0020dans\u0020la\u0020recherche\u0020sur\u0020le\u0020moringa\u0020nous\u0020dit\u0020tout\u0020de\u0020ce\u0020superaliment. Le\u0020moringa\u0020originaire\u0020d\u0026rsquo\u003BInde\u0020est\u0020un\u0020arbre\u0020tr\u0026egrave\u003Bs\u0020r\u0026eacute\u003Bsistant\u0020originaire\u0020d\u0026rsquo\u003BInde,\u0020aujourd\u0026rsquo\u003Bhui\u0020cultiv\u0026eacute\u003B\u0020dans\u0020de\u0020nombreux\u0020pays\u0020tropicaux\u0020d\u0026rsquo\u003BAsie\u0020et\u0020d\u0026rsquo\u003BAfrique.\u0020S\u0026rsquo\u003Bil\u0020existe\u002013\u0026nbsp\u003Besp\u0026egrave\u003Bces\u0020de\u0020moringa,\u0020c\u0026rsquo\u003Best\u0020g\u0026eacute\u003Bn\u0026eacute\u003Bralement\u0020le\u0020moringa\u0020oleifera\u0020qui\u0020est\u0020cultiv\u0026eacute\u003B\u0020et\u0020consomm\u0026eacute\u003B.\u0020Le\u0020moringa\u0020est\u0020un\u0020arbre\u0020\u0026agrave\u003B\u0020la\u0020croissance\u0020rapide,\u0020il\u0020faut\u0020g\u0026eacute\u003Bn\u0026eacute\u003Bralement\u00203\u0020\u0026agrave\u003B\u00206\u0026nbsp\u003Bmois\u0020pour\u0020r\u0026eacute\u003Bcolter\u0020ses\u0020premi\u0026egrave\u003Bres\u0020feuilles\u0020et\u0020un\u0020an\u0020et\u0020demi\u0020pour\u0020la\u0020premi\u0026egrave\u003Bre\u0020r\u0026eacute\u003Bcolte\u0020de\u0020fruits.\u0020Alors\u0020qu\u0026rsquo\u003Bil\u0020est\u0020encore\u0020peu\u0020connu\u0020en\u0020France,\u0020il\u0020repr\u0026eacute\u003Bsente\u0020la\u0020base\u0020de\u0020l\u0026rsquo\u003Balimentation\u0020en\u0020Inde\u0020o\u0026ugrave\u003B\u0020l\u0026rsquo\u003Bon\u0020consomme\u0020son\u0020fruit,\u0020en\u0020curry\u0020notamment.\u0020En\u0020Afrique,\u0020ce\u0020sont\u0020plut\u0026ocirc\u003Bt\u0020les\u0020feuilles\u0020qui\u0020sont\u0020pris\u0026eacute\u003Bes\u0020en\u0020plat,\u0020en\u0020couscous\u0020entre\u0020autres.\u0020Les\u0020feuilles\u0020sont\u0020\u0026eacute\u003Bgalement\u0020consomm\u0026eacute\u003Bes\u0020\u0022en\u0020soupe\u0020au\u0020lait\u0020de\u0020coco\u0020aux\u0020Philippines\u0022,\u0020ajoute\u0020Armelle\u0020de\u0020Saint\u0020Sauveur,\u0020ing\u0026eacute\u003Bnieure\u0020agronome,\u0020sp\u0026eacute\u003Bcialiste\u0020du\u0020moringa\u0020depuis\u0020plus\u0020de\u002020\u0020ans\u0020et\u0020fondatrice\u0020de\u0020Moringa\u0020and\u0020Co.\u0020Bienfaits\u0020nutritionnels\u0020du\u0020moringa\u0020En\u0020m\u0026eacute\u003Bdecine\u0020ayurv\u0026eacute\u003Bdique\u0020qui\u0020utilise\u0020le\u0020moringa\u0020depuis\u0020des\u0020si\u0026egrave\u003Bcles,\u0020l\u0026rsquo\u003Benti\u0026egrave\u003Bret\u0026eacute\u003B\u0020de\u0020l\u0026rsquo\u003Barbre\u0020est\u0020utilis\u0026eacute\u003Be\u0026nbsp\u003B\u003A\u0020racines,\u0020\u0026eacute\u003Bcorce,\u0020fruits\u0020et\u0020feuilles.\u0020En\u0020nutrition,\u0020ce\u0020sont\u0020ces\u0020deux\u0020derni\u0026egrave\u003Bres\u0020parties\u0020qui\u0020sont\u0020consomm\u0026eacute\u003Bes\u0020avec\u0020un\u0020avantage\u0020pour\u0020les\u0020feuilles,\u0020\u0022bien\u0020plus\u0020int\u0026eacute\u003Bressantes\u0020d\u0026rsquo\u003Bun\u0020point\u0020de\u0020vue\u0020nutritionnel\u0022,\u0020assure\u0020la\u0020sp\u0026eacute\u003Bcialiste.\u0020Ce\u0020tr\u0026eacute\u003Bsor\u0020nutritionnel\u0020n\u0026rsquo\u003Ba\u0020pas\u0020\u0026eacute\u003Bchapp\u0026eacute\u003B\u0020aux\u0020ONG\u0020qui\u0020luttent\u0020contre\u0020la\u0020malnutrition,\u0020\u0022Action\u0020Contre\u0020la\u0020Faim,\u0020la\u0020Croix\u0020Rouge,\u0020l\u0026rsquo\u003BUNICEF,\u0020toutes\u0020connaissent\u0020et\u0020ont\u0020int\u0026eacute\u003Bgr\u0026eacute\u003B\u0020le\u0020moringa\u0020\u0026agrave\u003B\u0020leurs\u0020programmes\u0022,\u0020pr\u0026eacute\u003Bcise\u0020Armelle\u0020de\u0020Saint\u0020Sauveur.\u0020Pour\u0020cause,\u0020il\u0020est\u0020extr\u0026ecirc\u003Bmement\u0020riche\u0020en\u0020min\u0026eacute\u003Braux\u0026nbsp\u003B\u0028calcium,\u0020potassium,\u0020fer,\u0020magn\u0026eacute\u003Bsium\u0029,\u0020en\u0020vitamines\u0020A,\u0020C,\u0020E,\u0020en\u0020prot\u0026eacute\u003Bines\u0020de\u0020tr\u0026egrave\u003Bs\u0020bonne\u0020qualit\u0026eacute\u003B\u0020\u0028contenant\u0020les\u00209\u0020acides\u0020amin\u0026eacute\u003Bs\u0020essentiels\u0029,\u0020antioxydants.\u0020\u0022Son\u0020atout\u0020principal\u0020est\u0020son\u0020spectre\u0020nutritionnel\u0020tr\u0026egrave\u003Bs\u0020large\u0020et\u0020bien\u0020\u0026eacute\u003Bquilibr\u0026eacute\u003B,\u0020\u0026eacute\u003Bclaire\u0020Armelle\u0020de\u0020Saint\u0020Sauveur.\u0020Le\u0020moringa\u0020contient\u0020tout\u0020ce\u0020dont\u0020on\u0020a\u0020besoin\u0020ce\u0020qui\u0020est\u0020assez\u0020rare\u0020pour\u0020une\u0020plante,\u0020\u0026agrave\u003B\u0020part\u0020de\u0020la\u0020vitamine\u0026nbsp\u003BB12.\u0022\u0020A\u0020poids\u0020\u0026eacute\u003Bgal,\u0020les\u0020feuilles\u0020fra\u0026icirc\u003Bches\u0020de\u0020moringa\u0020contiennent\u0020deux\u0020fois\u0020plus\u0020de\u0020prot\u0026eacute\u003Bines\u0020que\u0020les\u0020yaourts,\u00204\u0026nbsp\u003Bfois\u0020plus\u0020de\u0020vitamine\u0026nbsp\u003BA\u0020que\u0020les\u0020carottes,\u00203\u0026nbsp\u003Bfois\u0020plus\u0020de\u0020potassium\u0020que\u0020les\u0020bananes,\u00207\u0020fois\u0020plus\u0020de\u0020vitamine\u0026nbsp\u003BC\u0020que\u0020les\u0020oranges,\u00204\u0020fois\u0020plus\u0020de\u0020calcium\u0020que\u0020le\u0020lait.\u0020Quoi\u0020d\u0026rsquo\u003Bautre\u0026nbsp\u003B\u003F\u0020Autant\u0020de\u0020magn\u0026eacute\u003Bsium\u0020que\u0020le\u0020chocolat\u0020noir\u0026nbsp\u003B\u0021\u0020Souvent\u0020compar\u0026eacute\u003B\u0020\u0026agrave\u003B\u0020la\u0020spiruline,\u0020le\u0020moringa\u0020contient\u0020moins\u0020de\u0020prot\u0026eacute\u003Bines\u0020que\u0020l\u0026rsquo\u003Bautre\u0020poudre\u0020\u0022miraculeuse\u0022\u0026nbsp\u003B\u002825\u0026nbsp\u003Bg\u0020tout\u0020de\u0020m\u0026ecirc\u003Bme\u0020pour\u0020100\u0026nbsp\u003Bg\u0029,\u0020mais\u0020plus\u0020de\u0020calcium.\u0020Avec\u0020un\u0020tel\u0020palmar\u0026egrave\u003Bs,\u0020le\u0020moringa\u0020convient\u0020particuli\u0026egrave\u003Brement\u0020\u0022aux\u0020personnes\u0020souffrant\u0020d\u0027ost\u0026eacute\u003Boporose,\u0020aux\u0020enfants\u0020en\u0020croissance,\u0020aux\u0020intol\u0026eacute\u003Brants\u0020au\u0020lactose.\u0020C\u0026rsquo\u003Best\u0020\u0026eacute\u003Bgalement\u0020une\u0020tr\u0026egrave\u003Bs\u0020bonne\u0020source\u0020de\u0020prot\u0026eacute\u003Bines\u0020qui\u0020ont\u0020les\u0020m\u0026ecirc\u003Bmes\u0020valeurs\u0020nutritionnelles\u0020que\u0020la\u0020prot\u0026eacute\u003Bine\u0020animale\u0020ce\u0020qui\u0020est\u0020rare\u0020chez\u0020les\u0020plantes.\u0020Et\u0020de\u0020fer,\u0020ce\u0020qui\u0020en\u0020fait\u0020un\u0020aliment\u0020int\u0026eacute\u003Bressant\u0020pour\u0020les\u0020v\u0026eacute\u003Bg\u0026eacute\u003Btariens\u0020et\u0020les\u0020vegans.\u0022\u0020Riche\u0020en\u0020magn\u0026eacute\u003Bsium,\u0020\u0022l\u0026rsquo\u003Barbre\u0020de\u0020vie\u0022\u0020est\u0020\u0026eacute\u003Bgalement\u0020l\u0026rsquo\u003Balli\u0026eacute\u003B\u0020des\u0020sportifs.\u0020Pour\u0020faire\u0020le\u0020plein\u0020de\u0020macro\u0020et\u0020micronutriments,\u0020optez\u0020plut\u0026ocirc\u003Bt\u0020pour\u0020la\u0020version\u0020en\u0020poudre\u0020d\u0026eacute\u003Bshydrat\u0026eacute\u003Be\u0020\u0022plus\u0020concentr\u0026eacute\u003Be\u0020que\u0020les\u0020feuilles\u0020fra\u0026icirc\u003Bches\u0022,\u0020avec\u0020une\u0020diff\u0026eacute\u003Brence\u0020pour\u0020la\u0020vitamine\u0026nbsp\u003BC\u0020qui\u0020\u0022ne\u0020r\u0026eacute\u003Bsiste\u0020pas\u0020bien\u0020aux\u0020conditions\u0020de\u0020s\u0026eacute\u003Bchage.\u0020On\u0020passe\u0020de\u0020500\u0026nbsp\u003Bmg\u0020de\u0020vitamine\u0026nbsp\u003BC\u0020dans\u0020la\u0020feuille\u0020fra\u0026icirc\u003Bche\u0020\u0026agrave\u003B\u0020quelque\u0020chose\u0020comme\u002020\u0026nbsp\u003Bg\u0020dans\u0020la\u0020poudre\u0020de\u0020feuille\u0022.\u0020\u0020\u0020\u0020\u0020Composition\u0020nutritionnelle\u0020des\u0020feuilles\u0020de\u0020Moringa\u0020oleifera\u0020fra\u00EEches\u0020pour\u0020100\u0020grammes\u0020de\u0020mati\u00E8re\u0020s\u00E8che\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Calories\u0020\u0028kcal\u0029\u0020\u0020\u0020\u0020\u0020\u0020300\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Prot\u00E9ines\u0020\u0028g\u0029\u0020\u0020\u0020\u0020\u0020\u002025\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Min\u00E9raux\u0020\u0028g\u0029\u0020\u0020\u0020\u0020\u0020\u002012\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Glucides\u0020\u0028g\u0029\u0020\u0020\u0020\u0020\u0020\u002040\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Lipides\u0020\u0028g\u0029\u0020\u0020\u0020\u0020\u0020\u00208\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Fibres\u0020\u0028g\u0029\u0020\u0020\u0020\u0020\u0020\u002015\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Calcium\u0020\u0028mg\u0029\u0020\u0020\u0020\u0020\u0020\u00202100\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Fer\u0020\u0028mg\u0029\u0020\u0020\u0020\u0020\u0020\u002027\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Potassium\u0020\u0028mg\u0029\u0020\u0020\u0020\u0020\u0020\u00201300\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Magn\u00E9sium\u0020\u0028mg\u0029\u0020\u0020\u0020\u0020\u0020\u0020405\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Mangan\u00E8se\u0020\u0028mg\u0029\u0020\u0020\u0020\u0020\u0020\u00208\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Zinc\u0020\u0028mg\u0029\u0020\u0020\u0020\u0020\u0020\u00202,6\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Sodium\u0020\u0028mg\u0029\u0020\u0020\u0020\u0020\u0020\u0020100\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Vitamine\u0020A\u0020\u0028Ul\u0029\u0020\u0020\u0020\u0020\u0020\u002014300\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Vitamine\u0020C\u0020\u0028mg\u0029\u0020\u0020\u0020\u0020\u0020\u0020850\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Source\u0026nbsp\u003B\u003A\u0020Document\u0020r\u0026eacute\u003Balis\u0026eacute\u003B\u0020par\u0020M\u0026eacute\u003Blanie\u0020Broin,\u0020www.moringanews.org\u0020Les\u0020vertus\u0020sant\u0026eacute\u003B\u0020du\u0020moringa\u0020Ce\u0020puissant\u0020cocktail\u0020tr\u0026egrave\u003Bs\u0020bien\u0020\u0026eacute\u003Bquilibr\u0026eacute\u003B\u0020fait\u0020du\u0020moringa\u0020un\u0020superaliment\u0020dont\u0020les\u0020b\u0026eacute\u003Bn\u0026eacute\u003Bfices\u0020pour\u0020la\u0020sant\u0026eacute\u003B\u0020sont\u0020document\u0026eacute\u003Bs.\u0020Une\u0020r\u0026eacute\u003Bcente\u0020\u0026eacute\u003Btude\u0020de\u00202018,\u0020revient\u0020sur\u0020les\u0020effets\u0020b\u0026eacute\u003Bn\u0026eacute\u003Bfiques\u0020de\u0020feuilles\u0020de\u0020moringa\u0020contre\u0020les\u0020rhumes,\u0020la\u0020fi\u0026egrave\u003Bvre,\u0020les\u0020diarrh\u0026eacute\u003Bes,\u0020les\u0020douleurs,\u0020certaines\u0020pathologies\u0020cutan\u0026eacute\u003Bes.\u0020Son\u0020action\u0020antioxydante,\u0020anti\u002Dinflammatoire,\u0020antivirale\u0020a\u0020\u0026eacute\u003Bgalement\u0020\u0026eacute\u003Bt\u0026eacute\u003B\u0020d\u0026eacute\u003Bmontr\u0026eacute\u003Be.\u0020D\u0026rsquo\u003Bapr\u0026egrave\u003Bs\u0020l\u0026rsquo\u003B\u0026eacute\u003Btude\u0020Moringa\u0026nbsp\u003BGenus\u0026nbsp\u003B\u003A\u0020A\u0020Review\u0020of\u0020Phytochemistry\u0020and\u0020Pharmacology,\u0020les\u0020feuilles\u0020de\u0020moringa\u0020pourraient\u0020\u0026eacute\u003Bgalement\u0020inhiber\u0020la\u0020prolif\u0026eacute\u003Bration\u0020des\u0020cellules\u0020canc\u0026eacute\u003Breuses.\u0020Une\u0020\u0026eacute\u003Btude\u0020parue\u0020dans\u0020l\u0026rsquo\u003BInternational\u0020Journal\u0020of\u0020Molecular\u0020Sciences\u0020en\u0026nbsp\u003B2015\u0020fait\u0020r\u0026eacute\u003Bf\u0026eacute\u003Brence\u0020au\u0020moringa\u0020pour\u0020booster\u0020le\u0020syst\u0026egrave\u003Bme\u0020immunitaire\u0020et\u0020traiter\u0020les\u0020sympt\u0026ocirc\u003Bmes\u0020li\u0026eacute\u003Bs\u0020au\u0020VIH.\u0020\u0022A\u0020raison\u0020d\u0026rsquo\u003Bune\u0020cuill\u0026egrave\u003Bre\u0020\u0026agrave\u003B\u0020soupe\u0020par\u0020jour,\u0020ou\u00208\u0026nbsp\u003Bg\u0020de\u0020poudre\u0020de\u0020feuilles\u0020de\u0020moringa,\u0020des\u0020effets\u0020sur\u0020le\u0020diab\u0026egrave\u003Bte\u0020ont\u0020\u0026eacute\u003Bt\u0026eacute\u003B\u0020d\u0026eacute\u003Bmontr\u0026eacute\u003Bs\u0022,\u0020commente\u0020Armelle\u0020de\u0020Saint\u0020Sauveur.\u0020\u0022Le\u0020moringa\u0020a\u0020\u0026eacute\u003Bgalement\u0020un\u0020effet\u0020galactog\u0026egrave\u003Bne,\u0020il\u0020est\u0020tr\u0026egrave\u003Bs\u0020int\u0026eacute\u003Bressant\u0020pour\u0020les\u0020femmes\u0020qui\u0020allaitent.\u0020C\u0026rsquo\u003Best\u0020un\u0020aliment\u0020qui\u0020contient\u0020beaucoup\u0020de\u0020choses,\u0020des\u0020synergies\u0020se\u0020font,\u0020et\u0020il\u0020n\u0026rsquo\u003Best\u0020pas\u0020toujours\u0020\u0026eacute\u003Bvident\u0020de\u0020d\u0026eacute\u003Bterminer\u0020quel\u0020compos\u0026eacute\u003B\u0020a\u0020quel\u0020effet\u0022\u0020poursuit\u0020l\u0026rsquo\u003Bexperte.\u0020Comment\u0020choisir\u0020et\u0020consommer\u0020le\u0020moringa\u0026nbsp\u003B\u003F\u0020On\u0020trouve\u0020en\u0020France\u0020le\u0020moringa\u0020oleifera\u0020principalement\u0020sous\u0020forme\u0020de\u0020poudre\u0020ou\u0020feuilles\u0020d\u0026eacute\u003Bshydrat\u0026eacute\u003Bes,\u0020\u0022mais\u0020il\u0020est\u0020possible\u0020de\u0020trouver\u0020des\u0020fruits\u0020dans\u0020certaines\u0020boutiques\u0020indiennes\u0020dans\u0020les\u0020grandes\u0020villes\u0022,\u0020pr\u0026eacute\u003Bcise\u0020Armelle\u0020de\u0020Saint\u0020Sauveur.\u0020Les\u0020feuilles\u0020fra\u0026icirc\u003Bches\u0020peuvent\u0020\u0026ecirc\u003Btre\u0020consomm\u0026eacute\u003Bes\u0020en\u0020infusion.\u0020Elles\u0020apportent\u0020une\u0020pointe\u0020d\u0026rsquo\u003Bacidit\u0026eacute\u003B\u0020aux\u0020boissons\u0020chaudes\u0020et\u0020rappellent\u0020\u0022le\u0020tilleul\u0020et\u0020la\u0020verveine\u0022.\u0020En\u0020plat,\u0020elles\u0020se\u0020rapprochent\u0020des\u0020\u0026eacute\u003Bpinards\u0020et\u0020peuvent\u0020se\u0020consommer\u0020de\u0020la\u0020m\u0026ecirc\u003Bme\u0020fa\u0026ccedil\u003Bon.\u0020La\u0020poudre\u0020de\u0020feuilles\u0020de\u0020moringa\u0020est\u0020la\u0020forme\u0020la\u0020plus\u0020simple\u0020d\u0026rsquo\u003Butilisation.\u0020Elle\u0020entre\u0020dans\u0020la\u0020composition\u0020de\u0020jus\u0020green,\u0020de\u0020smoothies,\u0020elle\u0020se\u0020saupoudre\u0020sur\u0020les\u0020plats,\u0020s\u0026rsquo\u003Bajoute\u0020en\u0020fin\u0020de\u0020cuisson\u0020dans\u0020une\u0020sauce,\u0020une\u0020soupe,\u0020se\u0020glisse\u0020dans\u0020la\u0020farine\u0020pour\u0020les\u0020g\u0026acirc\u003Bteaux,\u0020les\u0020cakes\u0020sal\u0026eacute\u003Bs.\u0020Attention,\u0020Armelle\u0020de\u0020Saint\u0020Sauveur\u0020met\u0020en\u0020garde\u0020\u0022la\u0020poudre\u0020a\u0020un\u0020go\u0026ucirc\u003Bt\u0020tr\u0026egrave\u003Bs\u0020prononc\u0026eacute\u003B\u0020de\u0020chlorophylle.\u0020Elle\u0020ressemble\u0020un\u0020peu\u0020au\u0020th\u0026eacute\u003B\u0020matcha.\u0020Elle\u0020donne\u0020aux\u0020recettes\u0020un\u0020go\u0026ucirc\u003Bt\u0020un\u0020peu\u0020piquant\u0020qui\u0020ressemble\u0020\u0026agrave\u003B\u0020la\u0020roquette.\u0020Si\u0020vous\u0020la\u0020consommez\u0020seule\u0020dans\u0020de\u0020l\u0026rsquo\u003Beau\u0020il\u0020faut\u0020bien\u0020la\u0020diluer\u0022.\u0020Pour\u0020profiter\u0020des\u0020bienfaits\u0020du\u0020moringa,\u0020notre\u0020sp\u0026eacute\u003Bcialiste\u0020conseille\u0020de\u0020consommer\u00201\u0020\u0026agrave\u003B\u00202\u0026nbsp\u003Bcuill\u0026egrave\u003Bres\u0020\u0026agrave\u003B\u0020caf\u0026eacute\u003B\u0020par\u0020jour\u0020de\u0020poudre.\u0020\u0022Il\u0020faut\u0020l\u0026rsquo\u003Bint\u0026eacute\u003Bgrer\u0020\u0026agrave\u003B\u0020son\u0020alimentation\u0020progressivement\u0020car\u0020elle\u0020contient\u0020beaucoup\u0020de\u0020fibres\u0022,\u0020qui\u0020peuvent\u0020avoir\u0020un\u0020impact\u0020sur\u0020la\u0020digestion.\u0020\u0020Notre\u0020recommandations\u0020\u003A\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020Id\u00E9e\u0020recette\u0020Smoothie\u0020banane\u002Dgingembre\u002DmoringaPour\u0020deux\u0020grands\u0020verres\u00201\u0020banane\u00201\u0020yaourt\u0020de\u0020brebis\u0020ou\u0020de\u0020soja\u002030\u0020g\u0020de\u0020noix\u0020de\u0020cajou\u0020tremp\u00E9es\u00203\u0020heures\u00201\u0020datte\u0020tremp\u00E9e\u00201\u0020cc\u0020de\u0020moringa\u0020baobab\u002020\u0020g\u0020de\u0020gingembre\u0020confit\u002010\u0020g\u0020de\u0020gingembre\u0020frais\u0020r\u00E2p\u00E9\u00201\u20442\u0020citron\u0020press\u00E9\u00201\u0020cs\u0020de\u0020sirop\u0020d\u2019agaveMixer\u0020le\u0020tout,\u0020saupoudrez\u0020de\u0020cannelle\u0020et\u0020de\u0020moringa\u0020pure\u0020poudreRecette\u0020extraite\u0020de\u0020\u0020\u0020www.moringaandco.com\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020 ",
+        "articleSection": "Les\u0020secrets\u0020des\u0020aliments\u0020sant\u00E9",
+        "description": "Le\u0020moringa\u0020oleifera,\u0020aussi\u0020appel\u00E9\u0020arbre\u0020de\u0020vie,\u0020est\u0020utilis\u00E9\u0020pour\u0020ses\u0020vertus\u0020nutritionnelles\u0020depuis\u0020des\u0020d\u00E9cennies\u0020par\u0020les\u0020ONG\u0020dans\u0020des\u0020plans\u0020de\u0020lutte\u0020contre\u0020la\u0020malnutrition.\u0020Chez\u0020nous,\u0020seuls\u0020quelques\u0020initi\u00E9s\u0020profitent\u0020de\u0020ses\u0020bienfaits.\u0020Armelle\u0020de\u0020Saint\u0020Sauveur,\u0020pionni\u00E8re\u0020dans\u0020la\u0020recherche\u0020sur\u0020le\u0020moringa\u0020nous\u0020dit\u0020tout\u0020de\u0020ce\u0020superaliment.",
+        "keywords": ["moringa", "bienfaits moringa", "feuilles de moringa", "plante moringa"],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa"
+        },
+        "image": [
+            
+                {
+                   
+"@type": "ImageObject",
+"url": "https://resize.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg",
+"width": "1200"
+,"height": "678" 
+                },
+                {
+                    
+"@type": "ImageObject",
+"url": "https://resize.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg",
+"width": "1200"
+,"height": "902" 
+                },
+                {
+                    
+"@type": "ImageObject",
+"url": "https://resize.prod.docfr.doc-media.fr/s/1200/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-01ed53f0f6751f4d.jpeg",
+"width": "1200"
+,"height": "1200" 
+
+                }
+                    ],
+                    "video": [
+                {
+                    
+"@type": "VideoObject",
+"name": "Les\u0020bienfaits\u0020du\u0020moringa",
+"description": "Le\u0020moringa\u0020est\u0020un\u0020arbre\u0020originaire\u0020d\u2019Inde\u0020utilis\u00E9\u0020dans\u0020les\u0020programmes\u0020de\u0020lutte\u0020contre\u0020la\u0020malnutrition\u0020pour\u0020ses\u0020vertus\u0020nutritionnelles\u0020exceptionnelles.\u0020D\u00E9couvrez\u0020les\u0020bienfaits\u0020de\u0020ce\u0020superaliment.",
+"thumbnailUrl": [
+            "https://resize.prod.docfr.doc-media.fr/rcrop/1200,678,center-middle/ext/71c68c65/video51/20210930/v_646654.jpg",
+        "https://resize.prod.docfr.doc-media.fr/rcrop/1200,902,center-middle/ext/71c68c65/video51/20210930/v_646654.jpg",
+        "https://resize.prod.docfr.doc-media.fr/s/1200/ext/71c68c65/video51/20210930/v_646654.jpg"
+        ],
+"uploadDate": "2018-07-20T10:10:00+02:00",
+"duration": "",
+"embedURL": "https://www.doctissimo.fr/esi/video-player?videoid=646654",
+"publisher": {
+    "@type": "Organization",
+    "name": "Doctissimo",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://resize.prod.docfr.doc-media.fr/r/60,60,center-middle,ffffff,smartcrop/img/build/images/refonte/logos/logo-doctissimo-270x270.png",
+        "width": "60",
+        "height": "60"
+    }
+}
+                }
+            ],
+                                        "author": {
+                "@type": "Person",
+                "name": "Jessica Xavier",
+                "jobTitle": "Journaliste",                "url": "https://www.doctissimo.fr/equipe/auteurs/jessica-xavier"
+            },
+                "publisher": {
+            "@type": "Organization",
+            "name": "Doctissimo",
+            "url": "https://www.doctissimo.fr/",
+            "sameAS": "https://fr.wikipedia.org/wiki/Doctissimo",
+            "logo": {
+                   
+"@type": "ImageObject",
+"url": "https://cdn.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo.png",
+"width": "600"
+,"height": "60" 
+            }
+        }
+    }
+</script>
+
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "url": "https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa",
+    "numberOfItems": "10",
+    "itemListElement": [
+                {
+                "@type": "ListItem",
+                "position": "1",
+                "url": "https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/vitamines/15869-spiruline.htm",
+                "name": "Les bienfaits de la spiruline",
+                "image": "https://uploads.unify.uno/content/2022/7/3/spiruline-bienfaits-0b5226ab8a3a21ca.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "2",
+                "url": "https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/bienfaits-graines-chia",
+                "name": "Graine de chia : bienfaits et idées recettes",
+                "image": "https://uploads.unify.uno/content/2022/7/2/bienfaits-graines-chia-fb690893f1dfd3f0.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "3",
+                "url": "https://www.doctissimo.fr/nutrition/eau/bienfaits-eau-citronnee",
+                "name": "Eau citronnée : 10 bienfaits santé et minceur",
+                "image": "https://uploads.unify.uno/content/2022/7/4/bienfaits-eau-citronnee-df3d060af07e56d1.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "4",
+                "url": "https://www.doctissimo.fr/html/nutrition/aliments/articles/14957-avoine.htm",
+                "name": "Avoine - Bénéfices de l&#039;avoine pour la santé",
+                "image": "https://uploads.unify.uno/content/2022/7/8/flocon-avoine-5eee42978732ce54.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "5",
+                "url": "https://www.doctissimo.fr/nutrition/famille-d-aliments/the-et-sante/the-matcha",
+                "name": "Thé matcha : vertus de la poudre de matcha et recettes",
+                "image": "https://uploads.unify.uno/content/2022/7/3/the-matcha-ccc3df128c628ad7.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "6",
+                "url": "https://www.doctissimo.fr/html/nutrition/mag_2004/mag0109/nu_7266_mache_qualites_nutritionnelles.htm",
+                "name": "Salade : les bienfaits de la mâche",
+                "image": "https://uploads.unify.uno/content/2022/7/4/mache-qualites-nutritionnelles-d787751ff80784cc.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "7",
+                "url": "https://www.doctissimo.fr/nutrition/edulcorants/edulcorants-et-les-faux-sucres/sirop-agave",
+                "name": "Bienfaits du sirop d’agave, utilisation et conseils nutritionnels",
+                "image": "https://uploads.unify.uno/content/2022/7/4/sirop-agave-18455390147c1ed0.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "8",
+                "url": "https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/beurre-cacahuete",
+                "name": "Beurre de cacahuète : ses bienfaits et comment le choisir",
+                "image": "https://uploads.unify.uno/content/2022/7/4/beurre-cacahuete-8f446ea9d2495aca.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "9",
+                "url": "https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/bienfaits-des-amandes",
+                "name": "Les bienfaits de l&#039;amande sur la santé",
+                "image": "https://uploads.unify.uno/content/2022/7/3/bienfaits-des-amandes-3a6cb2ab7d504d19.jpeg"
+            }, 
+                {
+                "@type": "ListItem",
+                "position": "10",
+                "url": "https://www.doctissimo.fr/nutrition/famille-daliments/lipides/les-bienfaits-du-vinaigre-de-cidre/211614_ar.html",
+                "name": "Vinaigre de cidre : bienfaits, utilisation, santé",
+                "image": "https://uploads.unify.uno/content/2021/6/5/gettyimages-1279164555-cropped-1.jpg"
+            }
+        ]
+}
+</script>
+
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Webpage",
+    "lastReviewed": "2018-09-13T18:42:54+02:00",
+    "relatedLink": ["https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/vitamines/15869-spiruline.htm", "https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/bienfaits-graines-chia", "https://www.doctissimo.fr/nutrition/eau/bienfaits-eau-citronnee", "https://www.doctissimo.fr/html/nutrition/aliments/articles/14957-avoine.htm", "https://www.doctissimo.fr/nutrition/famille-d-aliments/the-et-sante/the-matcha", "https://www.doctissimo.fr/html/nutrition/mag_2004/mag0109/nu_7266_mache_qualites_nutritionnelles.htm", "https://www.doctissimo.fr/nutrition/edulcorants/edulcorants-et-les-faux-sucres/sirop-agave", "https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/beurre-cacahuete", "https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/bienfaits-des-amandes", "https://www.doctissimo.fr/nutrition/famille-daliments/lipides/les-bienfaits-du-vinaigre-de-cidre/211614_ar.html"]
+}
+</script>
+
+    <!--300_atf,dyninfeed-->
+
+    <script type="text/javascript">
+    var sha256=function r(o){function f(r,o){return r>>>o|r<<32-o}for(var t,n,a=Math.pow,c=a(2,32),e="length",i="",h=[],u=8*o[e],v=r.h=r.h||[],l=r.k=r.k||[],s=l[e],g={},k=2;64>s;k++)if(!g[k]){for(t=0;313>t;t+=k)g[t]=k;v[s]=a(k,.5)*c|0,l[s++]=a(k,1/3)*c|0}for(o+="";o[e]%64-56;)o+="\0";for(t=0;t<o[e];t++){if((n=o.charCodeAt(t))>>8)return;h[t>>2]|=n<<(3-t)%4*8}for(h[h[e]]=u/c|0,h[h[e]]=u,n=0;n<h[e];){var d=h.slice(n,n+=16),p=v;for(v=v.slice(0,8),t=0;64>t;t++){var w=d[t-15],A=d[t-2],C=v[0],M=v[4],S=v[7]+(f(M,6)^f(M,11)^f(M,25))+(M&v[5]^~M&v[6])+l[t]+(d[t]=16>t?d[t]:d[t-16]+(f(w,7)^f(w,18)^w>>>3)+d[t-7]+(f(A,17)^f(A,19)^A>>>10)|0);(v=[S+((f(C,2)^f(C,13)^f(C,22))+(C&v[1]^C&v[2]^v[1]&v[2]))|0].concat(v))[4]=v[4]+S|0}for(t=0;8>t;t++)v[t]=v[t]+p[t]|0}for(t=0;8>t;t++)for(n=3;n+1;n--){var b=v[t]>>8*n&255;i+=(16>b?0:"")+b.toString(16)}return i};    var device="",device_ua="";let userAgent=navigator.userAgent.toLowerCase();/(android|iphone|ipad|blackberry|symbian|symbianos|symbos|netfront|model-orange|javaplatform|iemobile|windows phone|samsung|htc|opera mobile|opera mobi|opera mini|presto|huawei|blazer|bolt|doris|fennec|gobrowser|iris|maemo browser|mib|cldc|minimo|semc-browser|skyfire|teashark|teleca|uzard|uzardweb|meego|nokia|bb10|playbook)/gi.test(userAgent)?screen.width>=480&&screen.height>=800||screen.width>=800&&screen.height>=480||navigator.userAgent.match(/ipad/gi)?(device="tablette",device_ua="tablette"):(device="mobile",device_ua="mobile"):(device="desktop",device_ua="desktop");    var readCookie=readCookie||function(n){var r,e,t=n.concat("="),o=document.cookie.split(";");for(e=0;e<o.length;e+=1){for(r=o[e];" "===r.charAt(0);)r=r.substring(1);if(0===r.indexOf(t))return r.substring(t.length,r.length)}return null};
+    var af_consentInternetTargeting = true;
+    var af_consentAdsTargeting = true;
+
+    if (typeof(window.__cmp) !== 'undefined' && typeof(window.__cmp.getCustomConsentBeforeLoad) !== 'undefined') {
+        var customCookieData = JSON.parse(window.__cmp.getCustomConsentBeforeLoad());
+
+        if (customCookieData !== null) {
+            if (typeof(customCookieData.internet_targeting) !== 'undefined') {
+                af_consentInternetTargeting = customCookieData.internet_targeting;
+            }
+
+            if (typeof(customCookieData.ads_targeting) !== 'undefined') {
+                af_consentAdsTargeting = customCookieData.ads_targeting;
+            }
+        }
+    }
+
+    const pageIds = {"animaux":"section_animals","beaute":"section_beauty","bebe":"section_baby","famille":"section_family","forme":"section_fit","grossesse":"section_pregnancy","medicaments":"section_drugs","medecines-douces":"section_altmed","mode":"section_fashion","nutrition":"section_nutrition","psychologie":"section_psycho","sante":"section_health","sexualite":"section_sexo","videos":"section_video","recettes":"section_food","home":"homepage","homepageprincipale":"homepage","tool_maternity":"tool_maternity"};
+
+    var segment = window.afSession ? afSession.getSegment() : 0;
+
+    
+        
+        var othersData = {
+    "client": "none",
+    "cm_section": "nutrition",
+    "cm_rubrique": "santé dans l&#039;assiette",
+    "section": "nutrition",
+    "subsection": "santé dans l&#039;assiette",
+    "level1": "nutrition",
+    "level2": "santé dans l&#039;assiette",
+    "level3": "bien-manger-pour-etre-en-bonne-sante",
+    "level4": "secrets-des-aliments-sante",
+    "level_1": "nutrition",
+    "level_2": "alimentation-et-sante",
+    "level_3": "bien-manger-pour-etre-en-bonne-sante",
+    "contenttype": "article",
+    "content_tpl": "article",
+    "content_class": "article",
+    "content_keywords": "moringa, bienfaits moringa, feuilles de moringa, plante moringa",
+    "seo_tag": "moringa, bienfaits moringa, feuilles de moringa, plante moringa",
+    "env": "prod",
+    "ops_tag": "none",
+    "url": "www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa",
+        "platform": "desktop",
+    "login": "0",
+    "segment": "0"
+}
+;
+        othersData.platform = device;
+        othersData.login = readCookie('CF_connected') ? 1 : 0;
+        othersData.segment = segment;
+
+    
+    var aufSectionDetected = (othersData.section === 'videos') ? othersData.subsection : othersData.section;
+
+    var sas_dfpPageId = (pageIds[aufSectionDetected]) ? pageIds[aufSectionDetected] : 'others';
+    var sas_formatIds = "banner_atf,300_atf,dyninfeed";
+    var sas_pageId = 1006319;
+    let sas_target = ';platform=' + device;
+    Object.keys(othersData).forEach(function(key){
+        if (othersData[key] !== '' && key !== 'content_keywords') sas_target += ';' + key + '=' + othersData[key];
+    });
+
+        var hasaffi = 0;
+    var hasvideo = 0;
+</script>
+
+    <script type="text/javascript">
+    var i = window,
+        e = document.documentElement,
+        b = document.body;
+
+    let currentUrl = new URL(document.location);
+
+    var segment = window.afSession ? afSession.getSegment() : 0;
+
+    var sp = new URLSearchParams(document.location.search);
+
+    var referrer = document.referrer;
+
+    if (referrer.indexOf('android-app://com.google.android.googlequicksearchbox') !== -1) {
+        sp.set('utm_campaign','');
+        sp.set('utm_source','google services');
+        sp.set('utm_medium','google discover');
+
+        if (history.replaceState) {
+            history.replaceState(null, document.title, document.location.pathname + '?' + sp.toString());
+        }
+    }
+
+    var utmCampaign = sp.get('utm_campaign') ?? '';
+    var utmMedium = sp.get('utm_medium') ?? '';
+    var utmSource = sp.get('utm_source') ?? '';
+
+    
+            var data_page = {
+    "section": "nutrition",
+    "subSection": "santé dans l'assiette",
+    "sectionId": 5343,
+    "subSectionId": 6246,
+    "ID": 277196,
+    "IDSection": "f8686a24-d38d-4189-9216-378ed379c774",
+    "IDSubSection": "03887c6d-79c0-49c6-8b8d-b5be4c3f5e68",
+    "UID": "bfaa9cc4-64cf-4499-b3f6-88374c7f8012",
+    "URLBO": "www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa",
+    "mainTag": "moringa, bienfaits moringa, feuilles de moringa, plante moringa",
+    "taxonomy2": [],
+    "secondaryTag": [],
+    "level_1": "nutrition",
+    "level_2": "alimentation-et-sante",
+    "subSecLvl3": "bien-manger-pour-etre-en-bonne-sante",
+    "level_3": "bien-manger-pour-etre-en-bonne-sante",
+    "subSecLvl4": "secrets-des-aliments-sante",
+    "level_4": "les-secrets-des-aliments-sante",
+    "subSecLvl5": "bienfaits-moringa",
+    "level_5": "les-bienfaits-du-moringa"
+};
+        data_page.version = '';
+        data_page.section = aufSectionDetected;
+
+        var data_content = {
+    "type": "article",
+    "class": "article",
+    "subClass": "article",
+    "author": "Jessica Xavier",
+    "date": "2018-07-20T08:10:00.000Z",
+    "modificationDate": "2022-09-08T07:02:17.095Z",
+    "label": "Les bienfaits du moringa",
+    "medReview": "",
+    "premium": false,
+    "wordsCount": 1434,
+    "dynInfeedCount": "",
+    "affiliation": 1
+};
+
+        var data_site = {
+    "platform": "doctissimo",
+    "lang": "fr",
+    "sid": 51,
+    "environment": "prod"
+};
+
+        var data_user = {
+    "id": "",
+    "dom": "",
+    "device": "",
+    "screenResolution": "",
+    "referer": "",
+    "segment": "",
+    "adblocker": "",
+    "isLoggedIn": "",
+    "registrationDate": "",
+    "firstPost": "",
+    "newsletterOptin": "",
+    "registrationType": "",
+    "activity": "",
+    "lastPost": "",
+    "optIn": ""
+};
+        data_user.id = readCookie('CF_user_id') ? "doctissimo_fr-" + sha256('UNIFY-DMP-' + readCookie('CF_user_id')) : '';
+        data_user.dom = "";
+        data_user.device =  device;
+        data_user.screenResolution = (i.innerWidth || e.clientWidth || b.clientWidth || 0) + 'x' + (i.innerHeight || e.clientHeight || b.clientHeight || 0);
+        data_user.referer =  referrer;
+        data_user.segment = segment;
+        data_user.adblocker =  "N/A";
+        data_user.isLoggedIn = !!readCookie('CF_connected');
+
+        var data_ops = {
+    "id": "none",
+    "name": "none",
+    "brand": "none"
+};
+
+        var data_utm = {
+    "campaign": "",
+    "medium": "",
+    "source": ""
+};
+        data_utm.campaign = utmCampaign;
+        data_utm.medium = utmMedium;
+        data_utm.source = utmSource;
+
+        window.unify_dataSlayer = window.unify_dataSlayer || [];
+
+        window.unify_dataSlayer.push({
+            "page": data_page,
+            "content": data_content,
+            "site": data_site,
+            "user": data_user,
+            "ops": data_ops,
+            "utm": data_utm
+        });
+
+        var CM_RUBRIQUE = othersData.cm_rubrique;
+        var CM_SECTION1 = othersData.cm_section;
+
+    </script>
+
+        <script>
+        var pegasusConf = {
+            params: {
+                site: 'doctissimo',
+                traffic: 'organic',
+                country: 'FR',
+                keywords: sas_target + ";hasvideo=" + hasvideo + ";hasaffi=" + hasaffi,
+                section: sas_dfpPageId,
+                contenttype: window.unify_dataSlayer[0].content.type,
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://pegasus.unifygroup.com/lib/pegasus.min.js" async></script>
+
+    
+        <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','unify_dataSlayer','GTM-PGLVR9V');
+    </script>
+
+    <script defer src="https://cdn.prod.docfr.doc-media.fr/build/jquery.js"></script>
+
+<script>
+    var trafficing_exclu_300mtf = false;
+
+    var trafficing_exclu_all = (
+        window.unify_dataSlayer[0].page.subSection === 'régimes'                                                // 2021-05-02
+        || window.unify_dataSlayer[0].page.subSecLvl5 === 'lesrumdenuitaurtinolpur-revitaliftlaserdeloralparis' // 2021-05-04
+        || window.unify_dataSlayer[0].page.subSecLvl5 === 'soinjouranti-agerevitaliftfillerdeloralparis'        // 2021-05-08
+        || window.unify_dataSlayer[0].page.subSecLvl3 === 'lethermomtreaxillaireconnecte-torm'                  // 2021-05-16
+        || window.unify_dataSlayer[0].page.subSection === 'vitamine'                                           // 2021-06-12
+    );
+
+    var trafficing_exclu_full = (
+        window.unify_dataSlayer[0].page.level_1 === 'equipe'
+        || window.unify_dataSlayer[0].page.subSecLvl3 === 'test-qi'
+        || window.unify_dataSlayer[0].page.subSecLvl4 === 'panier-100-pourcent-sante-bien-choisir-aide-auditives' // 2021-04-30
+    );
+
+    // Remove dyninfeed for pages in exclu pub
+    window.addEventListener('DOMContentLoaded', function() {
+        if (trafficing_exclu_all || trafficing_exclu_full) {
+            document.querySelectorAll('.doc-block-pub-dyn-infeed').forEach(function(e) {
+                e.remove();
+            });
+        }
+        if (trafficing_exclu_full && document.querySelector('#taboola-below-article-thumbnails')) {
+            document.querySelector('#taboola-below-article-thumbnails').remove();
+        }
+    });
+</script>
+
+
+
+<script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'');
+</script>
+
+
+        
+    <link rel="preload" href="https://cdn.prod.docfr.doc-media.fr/build/article-css.868f363f.css" as="style" media="screen" />
+    <link rel="stylesheet" href="https://cdn.prod.docfr.doc-media.fr/build/article-css.868f363f.css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.prod.docfr.doc-media.fr/build/affiliation-css.91027352.css" media="screen" />
+
+    </head>
+<body class="doc-rubric-nutrition doc-type-article">
+    
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGLVR9V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        
+                            
+                                                            <style>
+    
+    .social-network-header:hover {
+        cursor: pointer;
+    }
+</style>
+    <header class="">
+        <div class="container">
+            <div class="top-header d-flex justify-content-between align-items-center">
+                <div class="left-items">
+                    <span class="light-header social-network-header" data-snh=aHR0cHM6Ly9mci1mci5mYWNlYm9vay5jb20vZG9jdGlzc2ltby8=><a><i class="doc-icon-facebook"></i></a></span>
+                    <span class="light-header social-network-header" data-snh=aHR0cHM6Ly93d3cucGludGVyZXN0LmZyL2RvY3Rpc3NpbW8v><a><i class="doc-icon-pinterest"></i></a></span>
+                    <span class="light-header social-network-header" data-snh=aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9kb2N0aXNzaW1vLz9obD1mcg==><a><i class="doc-icon-instatagram"></i></a></span>
+                    <span class="light-header social-network-header" data-snh=aHR0cHM6Ly93d3cueW91dHViZS5jb20vdXNlci9Eb2N0aXNzaW1v><a><i class="doc-icon-youtube"></i></a></span>
+                    <span class="light-header social-network-header" data-snh=aHR0cHM6Ly90d2l0dGVyLmNvbS9kb2N0aXNzaW1v><a><i class="doc-icon-twitter"></i></a></span>
+                    <span class="light-header social-network-header" data-snh=aHR0cHM6Ly93d3cudGlrdG9rLmNvbS9AZG9jdGlzc2ltbw==><a><i class="doc-icon-tiktok"></i></a></span>
+                    <span class="light-header social-network-header" data-snh=aHR0cHM6Ly9mci5saW5rZWRpbi5jb20vY29tcGFueS9kb2N0aXNzaW1vLmZy><a><i class="doc-icon-linkedin"></i></a></span>
+                    <span class="doc-burger-menu" data-url="https://www.doctissimo.fr/header/menu/content"><span></span></span>
+                </div>
+                <div class="header-logo">                    <a href="https://www.doctissimo.fr" title="Doctissimo : Santé et bien être avec Doctissimo">
+                        <img class="logo"
+                             width="238"
+                             height="38"
+                             alt="Doctissimo : Santé et bien être avec Doctissimo"
+                             src="https://cdn.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo.svg"
+                             style="aspect-ratio: 238/38"
+                        />
+                        <span class="hidden">Doctissimo</span>
+                    </a>
+                </div>                <div class="header-right-item right-items">
+                    <a href="https://forum.doctissimo.fr/" class="doc-btn doc-btn--outline-primary">Forums</a>
+                    <span><i id="header-icon-search" class="doc-icon-search"></i></span>
+                    <div class="search-wrapper">
+                        <form class="d-flex" action="https://www.doctissimo.fr/recherche" method="get">
+                            <input id="doc-search-text" name="search[query]" type="text" autocomplete="off" placeholder="Rechercher" aria-label="Rechercher">
+                            <input type="submit" title="Recherchez sur Doctissimo" value="Go" tabindex="2">
+                            <i class="doc-icon-close color-blue-50"></i>
+                        </form>
+                    </div>
+                    <span class="light-header">
+                        <a href="https://forum.doctissimo.fr/inscription.html" title="Club Doctissimo"><i class="doc-icon-user"></i></a>
+                    </span>
+                </div>
+            </div>
+            <div class="sub-header d-flex justify-content-between align-items-center">
+                <div class="left-items"><span class="doc-burger-menu" data-url="https://www.doctissimo.fr/header/menu/content"><span></span></span></div>
+                <nav class="master-categories d-flex justify-content-between align-items-center">
+                                            <div class="master-categories__dropdown">
+                            <span class="sante" href="#">Santé</span>
+                        </div>
+                                            <div class="master-categories__dropdown">
+                            <span class="famille" href="#">Famille</span>
+                        </div>
+                                            <div class="master-categories__dropdown">
+                            <span class="bienetre" href="#">Bien-Être</span>
+                        </div>
+                                    </nav>
+                <div class="right-items"><a href="https://forum.doctissimo.fr/" class="doc-btn doc-btn--outline-primary">Forums</a></div>
+            </div>
+            <div class="coronavirus-banner d-flex doc-pb-3">
+                <a onclick="unify_ua_trackEvent('covid-banner', 'click', 'covid-banner-click')" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois"></a>
+                <a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'En_Ce_Moment');" href="https://www.doctissimo.fr/news" class="banner-item banner-item--left"><span>En ce moment</span></a>
+                <ul class="banner-item banner-item--middle">
+                    <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Calcul_IMC');" href="https://www.doctissimo.fr/asp/quizz/visu_form_bmi.asp">Calcul IMC</a></li>
+                    <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Outil_Prénom');" href="https://www.doctissimo.fr/prenoms">Outil prénom</a></li>
+                    <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Prise_RDV_Médical');" href="https://www.doctissimo.fr/sante/news/trouvez-un-rdv-medical-en-trois-clics-grace-a-mondocteur-fr">Prise de RDV médical</a></li>
+                    <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'COVID');" href="https://www.doctissimo.fr/sante/epidemie/coronavirus-chinois">COVID</a></li>
+                    <li><a onclick="unify_ua_trackEvent('Publisher', 'CovidBanner_Click', 'Variole_Du_Singe');" href="https://www.doctissimo.fr/sante/maladies/virus-emergeants/variole-du-singe/ff746f_sh.html">Variole du Singe</a></li>
+                </ul>
+            </div>
+            <div id="doc-burger-menu-content" class="doc-px-2 doc-py-3">
+                            
+<nav class='hidden'>
+                                                <div class="bienetre category-underline"><span>Bien-Être</span></div>
+            <ul class="doc-list">
+                                    <li class="hidden-xs "><a role="button">Beauté</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/html/beaute/beaute.htm" class="pull-left col-md-6" role="button">Beauté</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub ">
+                        <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                        <a href="https://forum.doctissimo.fr/forme-beaute/liste_categorie.htm" class="pull-right">Forums Beauté</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/beaute/beaute.htm" title="Beauté">Beauté</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                    </ul>
+                    </div>
+                                    <li class="hidden-xs "><a role="button">Forme</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/html/forme/forme.htm" class="pull-left col-md-6" role="button">Forme</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub ">
+                        <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                        <a href="https://forum.doctissimo.fr/forme-sport/liste_categorie.htm" class="pull-right">Forums Forme</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/forme/forme.htm" title="Forme">Forme</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                    </ul>
+                    </div>
+                                    <li class="hidden-xs "><a role="button">Nutrition</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/html/nutrition/nutrition.htm" class="pull-left col-md-6" role="button">Nutrition</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub  doc-burger-menu__sub--open">
+                        <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                        <a href="https://forum.doctissimo.fr/nutrition/liste_categorie.htm" class="pull-right">Forums Nutrition</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/nutrition/nutrition.htm" title="Nutrition">Nutrition</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/html/nutrition/mag_2001/mag0831/regimes_niv2.htm">Surveiller son poids</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Surveiller son poids</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/html/nutrition/dossiers/sante_assiette_niv2.htm">Santé dans l&#039;assiette</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Santé dans l&#039;assiette</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/html/nutrition/aliments/famille_aliments.htm">Aliments</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Aliments</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button">Nutriments</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Nutriments</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button">Bien manger</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Bien manger</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/nutrition/tests-nutrition">Tests Nutrition</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Tests Nutrition</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button">Conseils diététiques</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Conseils diététiques</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                            <li class="hidden-xs">
+                                    <a role="button" href="https://www.doctissimo.fr/html/nutrition/mag_2001/mag0316/nu_3800_trouble_aliment_niv2.htm">Pathologies</a>
+                                </li>
+                                <li class="hidden-lg hidden-sm hidden-md first-level row">
+                                    <span role="button" class="pull-left col-md-6">Pathologies</span>
+                                    <span class="col-md-6 pull-right">
+                                        <i class="doc-icon-arrow-right"></i>
+                                    </span>
+                                </li>
+                                                    </ul>
+                    </div>
+                                    <li class="hidden-xs "><a role="button">Psycho</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/html/psychologie/psychologie.htm" class="pull-left col-md-6" role="button">Psycho</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub ">
+                        <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                        <a href="https://forum.doctissimo.fr/psychologie/liste_categorie.htm" class="pull-right">Forums Psycho</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/psychologie/psychologie.htm" title="Psycho">Psycho</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                    </ul>
+                    </div>
+                                    <li class="hidden-xs "><a role="button">Sexualité</a></li>
+                    <li class="hidden-lg hidden-sm hidden-md first-level row ">
+                        <a href="https://www.doctissimo.fr/html/sexualite/sexualite.htm" class="pull-left col-md-6" role="button">Sexualité</a>
+                        <span class="col-md-6 pull-right">
+                            <i class="doc-icon-arrow-right"></i>
+                        </span>
+                    </li>
+                    <div class="doc-burger-menu__sub ">
+                        <i class="doc-icon-arrow-left"></i><div class="bienetre category-underline"><span>Bien-Être</span></div>
+                        <a href="https://forum.doctissimo.fr/doctissimo/liste_categorie.htm" class="pull-right">Forums Sexualité</a>
+                        <div class="hidden-xs doc-py-3"><a href="https://www.doctissimo.fr/html/sexualite/sexualite.htm" title="Sexualité">Sexualité</a></div>
+                        <ul class="doc-list doc-list--arrow-right">
+                                                    </ul>
+                    </div>
+                            </ul>
+            </nav>
+                        </div>
+        </div>
+    </header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var classname = document.getElementsByClassName("social-network-header");
+        for (var i = 0; i < classname.length; i++) {
+            //click gauche
+            classname[i].addEventListener('click', obfuscateFunction, false);
+            //click droit
+            classname[i].addEventListener('contextmenu', obfuscateFunction, false);
+        }
+    });
+    var obfuscateFunction = function(event) {
+        var attribute = this.getAttribute("data-snh");
+        var target = '_blank';
+        if (this.getAttribute("data-target") !== null) {
+            target = this.getAttribute("data-target");
+        }
+        if(event.ctrlKey) {
+            var newWindow = window.open(decodeURIComponent(window.atob(attribute)), target);
+            newWindow.focus();
+        } else {
+            window.open(decodeURIComponent(window.atob(attribute)), target);
+        }
+    };
+</script>
+
+        
+                    <div class="row header-pub-class">
+                <div class="col-md-12">
+                    <div class="doc-ad-container-banner-atf">
+                        <div id="banner_atf">
+                                                        <div id="banner_atf__container">
+                                <script type="text/javascript">
+        var ads_element_container = document.getElementById('banner_atf__container');
+
+        if( device !== 'desktop' && false) {
+            var ad_header = document.createElement('div');
+            ad_header.className = 'doc-ad-header';
+            ad_header.innerText = 'La suite après cette publicité';
+            var parent_div = ads_element_container.parentNode;
+            parent_div.insertBefore(ad_header, ads_element_container);
+        }
+
+        if (
+                                    true
+                        ) {
+            var ads_element_banner_atf = document.createElement('div');
+            ads_element_banner_atf.setAttribute('data-ad', 'banner_atf');
+            ads_element_banner_atf.setAttribute('data-ad-cls', 'keep');
+            ads_element_container.appendChild(ads_element_banner_atf);
+        }
+    </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div id="main-container" class="container">
+                                            <div class="row">
+                    <div class="col-md-12">
+                        <ol class="doc-menu-breadcrumb doc-pl-1 doc-pl-md-0">
+                                        <li class="doc-pl-1">
+                <a href="https://www.doctissimo.fr" title="Accueil">
+            <span>Accueil</span>
+        </a>
+    </li>
+
+            <li class="doc-pl-1">
+            <span class="doc-mr-1"> / </span>
+                <a href="https://www.doctissimo.fr/html/nutrition/nutrition.htm" title="Nutrition">
+            <span>Nutrition</span>
+        </a>
+    </li>
+
+        <div class="doc-collapse">
+        <div class="doc-collapse__content collapse" id="sourcesContents" aria-expanded="false" style="height: 0px;">
+                            <li class="doc-pl-1">
+            <span class="doc-mr-1"> / </span>
+                <a href="https://www.doctissimo.fr/html/nutrition/dossiers/sante_assiette_niv2.htm" title="Alimentation et santé">
+            <span>Alimentation et santé</span>
+        </a>
+    </li>
+
+                            <li class="doc-pl-1">
+            <span class="doc-mr-1"> / </span>
+                <a href="https://www.doctissimo.fr/html/nutrition/dossiers/sante-assiette/niv2/bien-manger-bonne-sante.htm" title="Bien manger pour être en bonne santé">
+            <span>Bien manger pour être en bonne santé</span>
+        </a>
+    </li>
+
+                            <li class="doc-pl-1">
+            <span class="doc-mr-1"> / </span>
+                <a href="https://www.doctissimo.fr/html/nutrition/dossiers/allegations-sante-etiquettes/aliments-sante-alicaments.htm" title="Les secrets des aliments santé">
+            <span>Les secrets des aliments santé</span>
+        </a>
+    </li>
+
+                    </div>
+                    <span class="doc-collapse__btn doc-collapse__btn--link collapsed" role="button" data-toggle="collapse" href="#sourcesContents" aria-expanded="false" aria-controls="sourcesContents">
+                <span class="doc-collapse__btn__open">...</span>
+                <span class="doc-collapse__btn__close">...</span>
+            </span>
+            </div>
+                        </ol>
+                    </div>
+                </div>
+            
+    
+                
+            
+                                        <div class="doc-content doc-px-2 doc-px-md-0">
+            
+
+<h1>Les bienfaits du moringa</h1>
+
+                        <div class="doc-my-3">
+                                                        
+                                                <div class="doc-user">
+                    <a class="doc-user__img-wrapper" href="https://www.doctissimo.fr/equipe/auteurs/jessica-xavier" title=" Jessica Xavier">
+        
+                    <img
+                src="https://resize.prod.docfr.doc-media.fr/r/50,50,center-middle,ffffff,smartcrop/ext/eac4ff34/content/2022/7/3/jessica-xavier-27f1cb7d231dcd06.jpeg"
+                alt=" Jessica Xavier"
+                class="rounded-circle"
+            />
+        
+                    </a>
+        
+        <div class="doc-user__content">
+            <strong>
+                                    <a href="https://www.doctissimo.fr/equipe/auteurs/jessica-xavier" title=" Jessica Xavier">
+                
+                     Jessica Xavier
+
+                                    </a>
+                            </strong>
+
+                            <span>Journaliste</span>
+                    </div>
+    </div>
+
+                                                </div>
+            
+    
+<div class="doc-date-xs doc-my-1">        
+                
+                
+                        <span>
+                Publié le&nbsp;<time datetime="2018-07-20T10:10:00+02:00">20/07/2018 à 10h10</time>
+                , mis à jour le&nbsp;<time datetime="2018-09-13T18:42:54+02:00">13/09/2018 à 18h42</time></span>
+            </span>
+            </div>
+
+
+    
+<p class="doc-annonceur text-right"></p>
+<div data-ad-ops-label></div>
+            <div class="doc-my-3">
+                                <!-- ESI - video player - doc: https://www.doctissimo.fr/esi/video-player?context=article&position=ATF&startOnSight=1&stickTo=bottom-right&videoid=646654 -->
+            <!-- ESI - video player - auf: https://dfp.doctissimo.fr/reloaded/esi/videoplayer.php?context=article&position=ATF&startOnSight=1&stickTo=bottom-right&videoid=646654 --><!-- ESI - VideoPlayer : http://dfp.doctissimo.fr/reloaded/esi/videoplayer.php?context=article&position=ATF&startOnSight=1&stickTo=bottom-right&videoid=646654 -->
+
+<link href="https&#x3A;&#x2F;&#x2F;geo.dailymotion.com" rel="dns-prefetch">
+<link href="https&#x3A;&#x2F;&#x2F;assets.afcdn.com&#x2F;video51&#x2F;20210930&#x2F;v_646654_w854h480c1.webp" rel="preload" type="image&#x2F;webp" as="image" importance="high">
+<style>/** https://dfp.doctissimo.fr/reloaded/static/Front/Component/videoPlayer/dist/unify-videoplayer-bundle.2.1.20.css?v=202210041021 **/ @charset "UTF-8";.vjs-ad-playing video{z-index:1}.vjs-ad-playing .ima-ad-container{opacity:1 !important}.vjs-ad-playing .ima-ad-container iframe{z-index:1111}.vjs-ad-playing .ima-ad-container .ima-controls-div{z-index:10000}.sticky-player .dailymotion-player-root{padding-bottom:0 !important}@-webkit-keyframes sticky{0%{opacity:0}100%{opacity:1}}@-moz-keyframes sticky{0%{opacity:0}100%{opacity:1}}@-ms-keyframes sticky{0%{opacity:0}100%{opacity:1}}@-o-keyframes sticky{0%{opacity:0}100%{opacity:1}}@keyframes sticky{0%{opacity:0}100%{opacity:1}}.video-wrapper.sticky-player>iframe{width:100%;height:100%}[hidden]{display:none !important}.sticky-flying-layout{width:100%}.sticky-flying-layout .sticky-buttons-bar{height:40px !important;position:absolute;top:-45px;width:100%;display:flex;flex-direction:row;justify-content:flex-end}.sticky-flying-layout .sticky-buttons-bar button{border:none;cursor:pointer;margin-left:5px;text-align:center}.sticky-flying-layout .sticky-buttons-bar button.close{height:25px;position:relative;top:15px;background:none}.sticky-flying-layout .sticky-buttons-bar button.close:focus{background:none}.sticky-flying-layout .video-player-sticky-custom-btn{font-size:24px;height:40px;opacity:0.5;text-align:right;text-decoration:none;width:40px;z-index:2000001}.sticky-flying-layout .video-player-sticky-custom-btn:hover, .sticky-flying-layout .video-player-sticky-custom-btn.gotoplayer{opacity:1}.sticky-flying-layout .video-player-sticky-custom-btn.close:before{content:"✖"}.sticky-flying-layout .video-player-sticky-bg{background-color:#f2f2f2;padding-top:56.25%;width:100%}.sticky-flying-layout .sticky-player.sticky-top{-webkit-box-shadow:#000 0 0 4px;-moz-box-shadow:#000 0 0 4px;box-shadow:#000 0 0 4px;height:56.25vw;width:100vw;top:52px;position:fixed;z-index:2000000;margin-left:auto;margin-right:auto}.sticky-flying-layout .sticky-player.sticky-top>div{height:56.25vw;width:100vw}.sticky-flying-layout .sticky-player.sticky-top-right{-webkit-animation-name:sticky;-moz-animation-name:sticky;-ms-animation-name:sticky;-o-animation-name:sticky;animation-name:sticky;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-out;-moz-animation-timing-function:ease-out;-ms-animation-timing-function:ease-out;-o-animation-timing-function:ease-out;animation-timing-function:ease-out;height:90px;width:160px;-webkit-box-shadow:#000 0 0 4px;-moz-box-shadow:#000 0 0 4px;box-shadow:#000 0 0 4px;position:fixed;top:10px;right:10px;z-index:2000000}.sticky-flying-layout .sticky-player.sticky-top-right>div{height:90px;width:160px}.sticky-flying-layout .sticky-player.sticky-bottom-right{-webkit-animation-name:sticky;-moz-animation-name:sticky;-ms-animation-name:sticky;-o-animation-name:sticky;animation-name:sticky;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-out;-moz-animation-timing-function:ease-out;-ms-animation-timing-function:ease-out;-o-animation-timing-function:ease-out;animation-timing-function:ease-out;height:90px;width:160px;-webkit-box-shadow:#000 0 0 4px;-moz-box-shadow:#000 0 0 4px;box-shadow:#000 0 0 4px;bottom:10px;position:fixed;right:10px;z-index:2000000}.sticky-flying-layout .sticky-player.sticky-bottom-right>div{height:90px;width:160px}.sticky-flying-layout .sticky-player.fix-width-sticky-bottom-right{height:90px;width:160px}.sticky-flying-layout .sticky-player.fix-width-sticky-bottom-right>div{height:90px;width:160px}@media (min-width: 768px){.sticky-flying-layout .sticky-player.sticky-bottom-right, .sticky-flying-layout .sticky-player.fix-width-sticky-bottom-right, .sticky-flying-layout .sticky-player.sticky-top-right, .sticky-flying-layout .sticky-player.sticky-top{height:185.625px;width:330px}.sticky-flying-layout .sticky-player.sticky-bottom-right > div, .sticky-flying-layout .sticky-player.fix-width-sticky-bottom-right > div, .sticky-flying-layout .sticky-player.sticky-top-right > div, .sticky-flying-layout .sticky-player.sticky-top>div{height:185.625px;width:330px}.sticky-flying-layout .sticky-player.flying-sticky-large.sticky-bottom-right, .sticky-flying-layout .sticky-player.flying-sticky-large.fix-width-sticky-bottom-right, .sticky-flying-layout .sticky-player.flying-sticky-large.sticky-top-right, .sticky-flying-layout .sticky-player.flying-sticky-large.sticky-top{height:299.8125px;width:533px}.sticky-flying-layout .sticky-player.flying-sticky-large.sticky-bottom-right > div, .sticky-flying-layout .sticky-player.flying-sticky-large.fix-width-sticky-bottom-right > div, .sticky-flying-layout .sticky-player.flying-sticky-large.sticky-top-right > div, .sticky-flying-layout .sticky-player.flying-sticky-large.sticky-top>div{height:299.8125px;width:533px}}.sticky-banner-layout{width:100%}.sticky-banner-layout .video-player-sticky-bg{background-color:#f2f2f2;padding-top:56.25%;width:100%}.sticky-banner-layout.position-top .sticky-player{top:0}.sticky-banner-layout.position-top .sticky-player sticky-content-wrapper{box-shadow:-2px -4px 10px 3px rgba(150, 150, 150, 0.75)}.sticky-banner-layout.position-bottom .sticky-player{bottom:0}.sticky-banner-layout.position-bottom .sticky-player sticky-content-wrapper{box-shadow:2px 4px 10px 3px rgba(150, 150, 150, 0.75)}.sticky-banner-layout .sticky-player{z-index:2000000;height:10vh;width:100vw;position:fixed;left:0;display:flex;flex-direction:column}@media screen and (orientation: portrait){.sticky-banner-layout .sticky-player.mobile{height:20vh}}@media screen and (orientation: landscape){.sticky-banner-layout .sticky-player.mobile{height:50vh}}.sticky-banner-layout .sticky-player sticky-content-wrapper{background:white;display:flex;flex-direction:row;flex:1;height:100%}.sticky-banner-layout .sticky-player sticky-content-wrapper>div{flex:1;height:100%}.sticky-banner-layout .sticky-player buttons-bar{display:flex;flex-direction:row;align-content:space-between;justify-content:space-between;position:absolute;top:0;right:0;left:0;z-index:100000}.sticky-banner-layout .sticky-player buttons-bar .close{cursor:pointer;margin-right:5px;height:25px;height:25px}.sticky-banner-layout .sticky-player buttons-bar .close:before{content:"✖"}.sticky-banner-layout .sticky-player buttons-bar button{width:40px;height:40px;color:white;background:none;font-size:large;border:none}.sticky-banner-layout .sticky-player .np_Controls-row--top .np_ButtonLogo, .sticky-banner-layout .sticky-player .np_Controls-row--top .transit{display:none}.sticky-banner-layout .sticky-player .np_ButtonUnmute{position:absolute;top:5px !important;left:40px !important}.sticky-banner-layout .sticky-player .controls_layer_1{z-index:99999 !important}.sticky-banner-layout.video-infos-displayed .sticky-player sticky-video-infos{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:300;padding:10px}.sticky-banner-layout.video-infos-displayed .sticky-player sticky-video-infos .video-title{text-align:center;display:-webkit-box;max-width:200px;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.sticky-banner-layout.video-infos-displayed .sticky-player buttons-bar .close{color:black;text-align:right;font-size:0.8rem}.sticky-buttons-bar button{padding:0}.sticky-buttons-bar button.video-player-sticky-custom-btn:focus{background:buttonface}.sticky-buttons-bar button.close{width:25px;height:25px}.video-wrapper{width:100%}.video-wrapper>.jwplayer{overflow:visible}.video-wrapper{height:0;position:relative}.video-wrapper.sticky-player.ratio-16-9{padding-bottom:0}.video-wrapper.sticky-player.ratio-1-1{padding-bottom:0}.video-wrapper.sticky-player.ratio-4-3{padding-bottom:0}.video-wrapper.sticky-player.ratio-3-2{padding-bottom:0}.video-wrapper.sticky-player.ratio-8-5{padding-bottom:0}.video-wrapper.ratio-16-9{padding-bottom:56.25%}.video-wrapper.ratio-16-9 .dailymotion-player-root{padding-bottom:56.25%}.video-wrapper.ratio-1-1{padding-bottom:100%}.video-wrapper.ratio-1-1 .dailymotion-player-root{padding-bottom:100%}.video-wrapper.ratio-4-3{padding-bottom:75%}.video-wrapper.ratio-4-3 .dailymotion-player-root{padding-bottom:75%}.video-wrapper.ratio-3-2{padding-bottom:66.66%}.video-wrapper.ratio-3-2 .dailymotion-player-root{padding-bottom:66.66%}.video-wrapper.ratio-8-5{padding-bottom:62.5%}.video-wrapper.ratio-8-5 .dailymotion-player-root{padding-bottom:62.5%}.video-wrapper iframe, .video-wrapper video{position:absolute;top:0;left:0;width:100%;height:100%}.video-wrapper video{width:100%;max-height:100%;background:black}</style>
+
+<script type="text/javascript">var videoPlayerUnifyInitDone = videoPlayerUnifyInitDone || false</script>
+<script type="text/javascript">var videoPlayerVersionNumber= videoPlayerVersionNumber || "2.1.20"</script>
+<script type="text/javascript">var videoPhpVars= videoPhpVars || {}; videoPhpVars["af_player_633bf8361c2867_49002326"]={"defaultAspectRatio":"16:9","dailymotionId":"x84k69m","dailymotionPlaylistID":"","allTechnos":{"videojs":{"id":"videojs","name":"Video JS"},"jwplayer":{"id":"jwplayer","name":"JWPlayer"},"dailymotion":{"id":"dailymotion","name":"Dailymotion"},"dailymotion-embed":{"id":"dailymotion-embed","name":"Dailymotion Embed"}},"allAdsTechnos":{"videojs":{"id":"ima","name":"IMA DFP"},"jwplayer":{"id":"jwplayer-ads","name":"JWPlayer"},"dailymotion":{"id":"dmp-ads","name":"Dailymotion"},"dailymotion-embed":{"id":"dmp-embed-ads","name":"Dailymotion"}},"techno":{"id":"dailymotion-embed","name":"Dailymotion Embed"},"adTechno":{"id":"dmp-embed-ads","name":"Dailymotion"},"isApp":false,"adSection":"","isComScoreTrackingEnabled":true,"isAdDisabled":false,"needPegasus":true,"playerId":"af_player_633bf8361c2867_49002326","videoId":646654,"context":"article","position":"ATF","aspectRatio":"16:9","adUnit":"\/229683329\/doctissimo_fr\/video\/preroll_ATF","pmad":3,"pmxd":51000,"height":"","muted":true,"title":"Les bienfaits du moringa","allowMultipleTinyAds":"true","siteId":51,"isCM":false,"hbVideoActive":false,"adScheduleId":"","adLabel":"Advertisement - Your video will load in","nextVideoLabel":"Next video in #SECONDS#","adPlayerLanguage":"FR","midrollActive":false,"minTimeMidroll":false,"jwpAdvertisingParameters":false,"adRule":true,"autoplay":{"startOnSight":true},"sticky":{"format":"flying","formatOptions":null,"stickTo":"bottom-right","stickyBlockedDuration":"","scrollUp":false,"stickBothSide":true,"stickyFullMobile":false,"showBackToOriginalPositionButton":true,"waitForAdLoaded":false}}</script>
+<script type="text&#x2F;javascript" async="async" src="https&#x3A;&#x2F;&#x2F;geo.dailymotion.com&#x2F;libs&#x2F;player&#x2F;x8613.js"></script>
+<!-- ESI VIDEO 11/07/2022 15:45 -->
+<div id="af_player_633bf8361c2867_49002326-container" class="af-videoplayer video-wrapper ratio-16-9">
+	<video id="af_player_633bf8361c2867_49002326" class=""  poster="https://assets.afcdn.com/video51/20210930/v_646654_w854h480c1.webp" preload="none" controls playsinline muted>
+					<source src="https://assets.afcdn.com/video51/20210930/v_646654.m3u8" type="application/x-mpegURL">
+					<source src="https://assets.afcdn.com/video51/20210930/v_646654_HD.mp4" type="video/mp4">
+					<source src="https://assets.afcdn.com/video51/20210930/v_646654_sd.mp4" type="video/mp4">
+				<p class="vjs-no-js">
+			Your browser cannot play this video.		</p>
+	</video>
+</div>
+<div data-ad="preroll_ATF" data-ad-playerid="af_player_633bf8361c2867_49002326"></div>
+
+<script src="https://static.afcdn.com/reldocfr/Front/Component/videoPlayer/dist/nomodule/unify-videoplayer-dailymotion-embed-bundle.2.1.20.iife.min.js" async defer></script>
+
+
+
+            </div>
+        </div>
+                    <div id="content-container" class="row">
+                                            <div class="col-md-8">
+                                
+
+<div class="doc-content doc-px-2 doc-px-md-0">
+                
+                
+    <div class="doc-my-4">
+        <p>
+            <strong>Le moringa oleifera, aussi appelé arbre de vie, est utilisé pour ses vertus nutritionnelles depuis des décennies par les ONG dans des plans de lutte contre la malnutrition. Chez nous, seuls quelques initiés profitent de ses bienfaits. Armelle de Saint Sauveur, pionnière dans la recherche sur le moringa nous dit tout de ce superaliment.</strong>
+        </p>
+    </div>
+
+            
+
+
+
+
+
+<div class="doc-menu-summary">
+    <strong>Sommaire</strong>
+    <ol>
+                    <li>
+                <a href="#bienfaits-nutritionnels-du-moringa">Bienfaits nutritionnels du moringa</a>
+            </li>
+                    <li>
+                <a href="#les-vertus-sante-du-moringa">Les vertus santé du moringa</a>
+            </li>
+                    <li>
+                <a href="#comment-choisir-et-consommer-le-moringa">Comment choisir et consommer le moringa ?</a>
+            </li>
+            </ol>
+</div>
+
+
+    <div class="doc-ad-container-300-atf">
+        <div id="300_atf">
+            <script type="text/javascript">
+        var ads_element_container = document.getElementById('300_atf');
+
+        if( device !== 'desktop' && true) {
+            var ad_header = document.createElement('div');
+            ad_header.className = 'doc-ad-header';
+            ad_header.innerText = 'La suite après cette publicité';
+            var parent_div = ads_element_container.parentNode;
+            parent_div.insertBefore(ad_header, ads_element_container);
+        }
+
+        if (
+                                    device !== 'desktop'
+                                            ) {
+            var ads_element_300_atf = document.createElement('div');
+            ads_element_300_atf.setAttribute('data-ad', '300_atf');
+            ads_element_300_atf.setAttribute('data-ad-cls', 'keep');
+            ads_element_container.appendChild(ads_element_300_atf);
+        }
+    </script>
+        </div>
+    </div>
+
+
+<p>Le moringa originaire d&rsquo;Inde est un arbre tr&egrave;s r&eacute;sistant originaire d&rsquo;Inde, aujourd&rsquo;hui cultiv&eacute; dans de nombreux pays tropicaux d&rsquo;Asie et d&rsquo;Afrique. S&rsquo;il existe 13&nbsp;esp&egrave;ces de moringa, c&rsquo;est g&eacute;n&eacute;ralement le moringa oleifera qui est cultiv&eacute; et consomm&eacute;. Le moringa est un arbre &agrave; la croissance rapide, il faut g&eacute;n&eacute;ralement 3 &agrave; 6&nbsp;mois pour r&eacute;colter ses premi&egrave;res feuilles et un an et demi pour la premi&egrave;re r&eacute;colte de fruits.</p>
+<p>Alors qu&rsquo;il est encore peu connu en France, il repr&eacute;sente la base de l&rsquo;alimentation en Inde o&ugrave; l&rsquo;on consomme son fruit, en curry notamment. En Afrique, ce sont plut&ocirc;t les feuilles qui sont pris&eacute;es en plat, en couscous entre autres. Les feuilles sont &eacute;galement consomm&eacute;es "<em>en soupe au lait de coco aux Philippines</em>", ajoute Armelle de Saint Sauveur, ing&eacute;nieure agronome, sp&eacute;cialiste du moringa depuis plus de 20 ans et fondatrice de Moringa and Co.</p>
+<h2 id="bienfaits-nutritionnels-du-moringa">Bienfaits nutritionnels du moringa</h2>
+<p>En m&eacute;decine ayurv&eacute;dique qui utilise le moringa depuis des si&egrave;cles, l&rsquo;enti&egrave;ret&eacute; de l&rsquo;arbre est utilis&eacute;e&nbsp;: racines, &eacute;corce, fruits et feuilles. En nutrition, ce sont ces deux derni&egrave;res parties qui sont consomm&eacute;es avec un avantage pour les feuilles, "<em>bien plus int&eacute;ressantes d&rsquo;un point de vue nutritionnel"</em>, assure la sp&eacute;cialiste. Ce tr&eacute;sor nutritionnel n&rsquo;a pas &eacute;chapp&eacute; aux ONG qui luttent contre la malnutrition, "<em>Action Contre la Faim, la Croix Rouge, l&rsquo;UNICEF, toutes connaissent et ont int&eacute;gr&eacute; le moringa &agrave; leurs programmes</em>", pr&eacute;cise Armelle de Saint Sauveur.</p>
+<p>Pour cause, il est extr&ecirc;mement riche en min&eacute;raux&nbsp;(<a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/calcium.htm" rel="" target="">calcium</a>, <a href="https://www.doctissimo.fr/nutrition/mineraux/potassium" rel="" target="">potassium</a>, <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/fer.htm" rel="" target="">fer</a>, <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/magnesium.htm" rel="" target="">magn&eacute;sium</a>), en vitamines <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/vitamine_a.htm" rel="" target="">A</a>, <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/vitamine_c.htm" rel="" target="">C</a>, <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/vitamine_e.htm" rel="" target="">E</a>, en <a href="https://www.doctissimo.fr/nutrition/diaporamas/les-aliments-riches-en-proteines" rel="" target="">prot&eacute;ines</a> de tr&egrave;s bonne qualit&eacute; (contenant les 9 acides amin&eacute;s essentiels), <a href="https://www.doctissimo.fr/nutrition/diaporamas/aliment-antioxydant" rel="" target="">antioxydants</a>. "<em>Son atout principal est son spectre nutritionnel tr&egrave;s large et bien &eacute;quilibr&eacute;, &eacute;claire Armelle de Saint Sauveur. Le moringa contient tout ce dont on a besoin ce qui est assez rare pour une plante, &agrave; part de la vitamine&nbsp;B12.</em>" A poids &eacute;gal, les feuilles fra&icirc;ches de moringa contiennent deux fois plus de prot&eacute;ines que les yaourts, 4&nbsp;fois plus de vitamine&nbsp;A que les carottes, 3&nbsp;fois plus de potassium que les bananes, 7 fois plus de vitamine&nbsp;C que les oranges, 4 fois plus de calcium que le lait. Quoi d&rsquo;autre&nbsp;? Autant de magn&eacute;sium que le chocolat noir&nbsp;! Souvent compar&eacute; &agrave; la <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/vitamines/15869-spiruline.htm" rel="" target="">spiruline,</a> le moringa contient moins de prot&eacute;ines que l&rsquo;autre poudre "miraculeuse"&nbsp;(25&nbsp;g tout de m&ecirc;me pour 100&nbsp;g), mais plus de calcium.</p>
+<div>    <div class="doc-ad-container-dyninfeed">
+        <div class="doc-ad-header">La suite après cette publicité</div>
+        <div class="doc-block-pub doc-block-pub-dyn-infeed" id="dyn_infeed_1" data-ad="dyninfeed" data-ad-cls="keep"></div>
+    </div>
+</div>
+<p>Avec un tel palmar&egrave;s, le moringa convient particuli&egrave;rement "<em>aux personnes souffrant d'</em><em><a href="https://www.doctissimo.fr/html/dossiers/osteoporose.htm" rel="" target="">ost&eacute;oporose</a></em><em>, aux enfants en croissance, aux </em><em><a href="https://www.doctissimo.fr/nutrition/allergie-au-lait-de-vache/intolerance-lactose" rel="" target="">intol&eacute;rants au lactose</a></em><em>. C&rsquo;est &eacute;galement une tr&egrave;s bonne source de prot&eacute;ines qui ont les m&ecirc;mes valeurs nutritionnelles que la prot&eacute;ine animale ce qui est rare chez les plantes. Et de fer, ce qui en fait un aliment int&eacute;ressant pour les v&eacute;g&eacute;tariens et les vegans</em>." Riche en magn&eacute;sium, "l&rsquo;arbre de vie" est &eacute;galement l&rsquo;alli&eacute; des sportifs.</p>
+<p>Pour faire le plein de macro et micronutriments, optez plut&ocirc;t pour la version en poudre d&eacute;shydrat&eacute;e "plus concentr&eacute;e que les feuilles fra&icirc;ches", avec une diff&eacute;rence pour la vitamine&nbsp;C qui "<em>ne r&eacute;siste pas bien aux conditions de s&eacute;chage. On passe de 500&nbsp;mg de vitamine&nbsp;C dans la feuille fra&icirc;che &agrave; quelque chose comme 20&nbsp;g dans la poudre de feuille"</em>.</p>
+<div><div class="doc-table-responsive"><table class="renderedtable" border="1" cellpadding="2" cellspacing="0">
+<tr>
+<td colspan="2" width="435" valign="top" style="vertical-align: top">  <p><b>Composition nutritionnelle des feuilles de Moringa oleifera fraîches pour 100 grammes de matière sèche</b></p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Calories (kcal)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>300</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Protéines (g)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>25</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Minéraux (g)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>12</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Glucides (g)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>40</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Lipides (g)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>8</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Fibres (g)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>15</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Calcium (mg)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>2100</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Fer (mg)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>27</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Potassium (mg)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>1300</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Magnésium (mg)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>405</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Manganèse (mg)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>8</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Zinc (mg)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>2,6</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Sodium (mg)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>100</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Vitamine A (Ul)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>14300</p>
+  </td>
+
+</tr>
+
+<tr>
+<td width="215" valign="top" style="vertical-align: top">  <p>Vitamine C (mg)</p>
+  </td>
+<td width="220" valign="top" style="vertical-align: top">  <p>850</p>
+  </td>
+
+</tr>
+
+</table>
+</div></div>
+<p><em>Source&nbsp;: Document r&eacute;alis&eacute; par M&eacute;lanie Broin, </em><em><a href="http://www.moringanews.org/" rel="" target="_blank">www.moringanews.org</a></em></p>
+<h2 id="les-vertus-sante-du-moringa">Les vertus sant&eacute; du moringa</h2>
+<p>Ce puissant cocktail tr&egrave;s bien &eacute;quilibr&eacute; fait du moringa un superaliment dont les b&eacute;n&eacute;fices pour la sant&eacute; sont document&eacute;s. Une r&eacute;cente &eacute;tude de 2018, revient sur les effets b&eacute;n&eacute;fiques de feuilles de moringa contre les <a href="https://www.doctissimo.fr/html/sante/mag_2004/sem01/mag0123/sa_7389_rhume_mouchoirs.htm" rel="" target="">rhumes</a>, la <a href="https://www.doctissimo.fr/sante/maux-quotidiens/fievre/causes-mecanisme-fievre" rel="" target="">fi&egrave;vre</a>, les <a href="https://www.doctissimo.fr/html/dossiers/diarrhee.htm" rel="" target="">diarrh&eacute;es</a>, les <a href="https://www.doctissimo.fr/html/sante/mag_2000/mag1208/dossier/sa_3200_douleur_niv2.htm" rel="" target="">douleurs</a>, certaines pathologies cutan&eacute;es. Son action antioxydante, anti-inflammatoire, antivirale a &eacute;galement &eacute;t&eacute; d&eacute;montr&eacute;e.</p>
+<p>D&rsquo;apr&egrave;s l&rsquo;&eacute;tude <em>Moringa&nbsp;Genus&nbsp;: A Review of Phytochemistry and Pharmacology,</em> les feuilles de moringa pourraient &eacute;galement inhiber la prolif&eacute;ration des cellules canc&eacute;reuses.</p>
+<p>Une &eacute;tude parue dans l&rsquo;<em>International Journal of Molecular Sciences</em> en&nbsp;2015 fait r&eacute;f&eacute;rence au moringa pour booster le syst&egrave;me immunitaire et traiter les sympt&ocirc;mes li&eacute;s au VIH.</p>
+<div>
+                
+        <div class="doc-recommendations doc-recommendations--article">
+                    <div class="h2">À voir aussi</div>
+            <div class="row">
+                                    <div class="col-md-6">
+                                    
+        
+    <div class="card card--band card--band-50 card--no-strip">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/s/160/ext/eac4ff34/content/2022/7/3/spiruline-bienfaits-69fb251ccc26974b.jpeg"
+                    loading="lazy"
+                                alt="Les bienfaits de la spiruline"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="160"
+                                                    height="160"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/s/160/ext/eac4ff34/content/2022/7/3/spiruline-bienfaits-69fb251ccc26974b.jpeg" alt="Les bienfaits de la spiruline" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/html/nutrition/vitamines_mineraux/vitamines/15869-spiruline.htm"
+               title="Les bienfaits de la spiruline" >Les bienfaits de la spiruline</a>
+                            </span>
+                                </div>
+    </div>
+
+                    </div>
+                                    <div class="col-md-6">
+                                    
+        
+    <div class="card card--band card--band-50 card--no-strip">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/s/160/ext/eac4ff34/content/2022/7/2/bienfaits-graines-chia-71f524186bbd1527.jpeg"
+                    loading="lazy"
+                                alt="Graine de chia : bienfaits et idées recettes"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="160"
+                                                    height="160"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/s/160/ext/eac4ff34/content/2022/7/2/bienfaits-graines-chia-71f524186bbd1527.jpeg" alt="Graine de chia : bienfaits et idées recettes" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/bienfaits-graines-chia"
+               title="Graine de chia : bienfaits et idées recettes" >Graine de chia : bienfaits et idées recettes</a>
+                            </span>
+                                </div>
+    </div>
+
+                    </div>
+                            </div>
+            </div>
+</div>
+<p>"<em>A raison d&rsquo;une cuill&egrave;re &agrave; soupe par jour, ou 8&nbsp;g de poudre de feuilles de moringa, des effets sur le diab&egrave;te ont &eacute;t&eacute; d&eacute;montr&eacute;s</em>", commente Armelle de Saint Sauveur. "<em>Le moringa a &eacute;galement un effet galactog&egrave;ne, il est tr&egrave;s int&eacute;ressant pour les femmes qui allaitent. C&rsquo;est un aliment qui contient beaucoup de choses, des synergies se font, et il n&rsquo;est pas toujours &eacute;vident de d&eacute;terminer quel compos&eacute; a quel effet</em>" poursuit l&rsquo;experte.</p>
+<div>    <div class="doc-ad-container-dyninfeed">
+        <div class="doc-ad-header">La suite après cette publicité</div>
+        <div class="doc-block-pub doc-block-pub-dyn-infeed" id="dyn_infeed_2" data-ad="dyninfeed" data-ad-cls="keep"></div>
+    </div>
+</div>
+<div>
+<h2>NON aux régimes, OUI à WW !</h2>
+<div class="doc-promote-banner-wrapper col-md-12 doc-px-1 doc-mb-6">
+        <div id="doc_promote_banner_nutrition"
+         class="hidden-sm hidden-xs row doc-promote-banner rounded-lg shadow-lg text-center ww">
+        <div class="doc-promote-banner-text col-md-7">
+            <div class="doc-promote-banner-text__content doc-pb-md-3 text-left">
+                <p class="ww-content doc-py-2 doc-mx-2"><span class='partnership'>Partenariat WW (WeightWatchers) :</span> Faites-vous plaisir, mangez vos aliments préférés, et perdez du poids sans avoir faim.</p>
+                <a href="https://bit.ly/3vb9Rsv" target="_blank">
+                    <span class="ww-button doc-ml-2 hidden-sm hidden-xs doc-btn doc-btn--primary doc-btn--rounded">
+                        Je dis OUI !
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="doc-promote-banner-ww-image__image doc-promote-banner-ww-image__image--nutrition"></div>
+        </div>
+    </div>
+    <div class="hidden-md hidden-lg doc-promote-banner-ww-xs rounded-lg shadow-lg text-center">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="doc-promote-banner-ww-image__image doc-promote-banner-ww-image__image--logo"></div>
+            </div>
+            <div class="doc-promote-banner-text__content col-xs-8 text-left">
+                <p class="ww-content doc-py-2 doc-mx-2"><span class='partnership'>Partenariat WW (WeightWatchers) :</span> Faites-vous plaisir, mangez vos aliments préférés, et perdez du poids sans avoir faim.</p>
+            </div>
+        </div>
+        <div>
+            <a href="https://bit.ly/3vb9Rsv" target="_blank">
+                <span class="doc-promote-banner-text__content--cta center-block doc-ml-2 doc-btn doc-btn--primary doc-btn--rounded">
+                    Je dis OUI !
+                </span>
+            </a>
+        </div>
+    </div>
+
+</div>
+</div>
+<h2 id="comment-choisir-et-consommer-le-moringa">Comment choisir et consommer le moringa&nbsp;?</h2>
+<p>On trouve en France le moringa oleifera principalement sous forme de poudre ou feuilles d&eacute;shydrat&eacute;es, "<em>mais il est possible de trouver des fruits dans certaines boutiques indiennes dans les grandes villes</em>", pr&eacute;cise Armelle de Saint Sauveur.</p>
+<p>Les feuilles fra&icirc;ches peuvent &ecirc;tre consomm&eacute;es en infusion. Elles apportent une pointe d&rsquo;acidit&eacute; aux boissons chaudes et rappellent "<em>le </em><em><a href="https://www.doctissimo.fr/html/sante/phytotherapie/plante-medicinale/tilleul.htm" rel="" target="">tilleul</a></em><em> et la </em><em><a href="https://www.doctissimo.fr/html/sante/phytotherapie/plante-medicinale/verveine.htm" rel="" target="">verveine</a></em>". En plat, elles se rapprochent des &eacute;pinards et peuvent se consommer de la m&ecirc;me fa&ccedil;on.</p>
+<p>La poudre de feuilles de moringa est la forme la plus simple d&rsquo;utilisation. Elle entre dans la composition de jus green, de smoothies, elle se saupoudre sur les plats, s&rsquo;ajoute en fin de cuisson dans une sauce, une soupe, se glisse dans la farine pour les g&acirc;teaux, les cakes sal&eacute;s. Attention, Armelle de Saint Sauveur met en garde "<em>la poudre a un go&ucirc;t tr&egrave;s prononc&eacute; de chlorophylle. Elle ressemble un peu au th&eacute; matcha. Elle donne aux recettes un go&ucirc;t un peu piquant qui ressemble &agrave; la roquette. Si vous la consommez seule dans de l&rsquo;eau il faut bien la diluer</em>". Pour profiter des bienfaits du moringa, notre sp&eacute;cialiste conseille de consommer 1 &agrave; 2&nbsp;cuill&egrave;res &agrave; caf&eacute; par jour de poudre. "<em>Il faut l&rsquo;int&eacute;grer &agrave; son alimentation progressivement car elle contient beaucoup de fibres</em>", qui peuvent avoir un impact sur la digestion.</p>
+
+<p><strong>Notre recommandations : </strong></p>
+<div class="affiliation-block doc-mb-2" id="0c2782a2-3f1c-4f07-9e99-8f7abd356f5b" data-type="price_table" data-title="MoriVeda - Moringa en poudre 250g" data-img-url="https://uploads.unify.uno/content/2022/3/7/1649343545805.jpeg"><div class="affiliation-placeholder-price-table"></div></div>
+
+<div><div class="doc-table-responsive"><table class="renderedtable" border="1" cellpadding="2" cellspacing="0">
+<tr>
+<td width="614" valign="top" style="vertical-align: top">  <p>
+<b>Idée recette</b><br />
+<b>Smoothie banane-gingembre-moringa</b><br /><b>Pour deux grands verres</b></p><p>
+1 banane<br />
+1 yaourt de brebis ou de soja<br />
+30 g de noix de cajou trempées 3 heures<br />
+1 datte trempée<br />
+1 cc de moringa baobab<br />
+20 g de gingembre confit<br />
+10 g de gingembre frais râpé<br />
+1⁄2 citron pressé<br />
+1 cs de sirop d’agave<br />Mixer le tout, saupoudrez de cannelle et de moringa pure poudre</p><p>Recette extraite de 
+
+<a href="https://www.moringaandco.com/" target="_blank">www.moringaandco.com</a></p>
+  </td>
+
+</tr>
+
+</table>
+</div></div>
+
+
+<script type="text/javascript">
+    window.unify_dataSlayer[0].content.dynInfeedCount = 2;
+</script>
+    
+    <p class="doc-annonceur text-right"></p>
+<div data-ad-ops-label></div>
+</div>
+
+    <source media="(max-width: 380px)" srcset="https://resize.prod.docfr.doc-media.fr/rcrop/380,288,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg">
+    <source media="(max-width: 480px)" srcset="https://resize.prod.docfr.doc-media.fr/rcrop/480,363,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg">
+    <source media="(max-width: 1023px)" srcset="https://resize.prod.docfr.doc-media.fr/rcrop/720,420,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg">
+    <source media="(min-width: 1024px)" srcset="https://resize.prod.docfr.doc-media.fr/rcrop/650,380,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg">
+
+<div class="doc-px-2 doc-px-md-0">
+    <hr class="doc-hr-100"/>
+
+           
+<div class="doc-date-xs doc-my-1">        
+                
+                
+                        <span>Publié le&nbsp;<time datetime="2018-07-20T10:10:00+02:00">20/07/2018 à 10h10</time></span>
+            </div>
+
+    
+    
+                                <div class="doc-my-3" id="sourcesContent">
+                <span class="doc-sources">Sources</span>
+                <p>
+- Entretien avec Armelle de Saint Sauveur ing&eacute;nieure agronome, sp&eacute;cialiste du moringa et fondatrice de <a href="https://www.moringaandco.com/" rel="" target="_blank">www.moringaandco.com</a> et de <a href="http://www.moringanews.org" rel="" target="_blank">www.moringanews.org</a>
+-&nbsp;<a href="http://www.moringanews.org/documents/Compofeuilles.pdf" rel="" target="_blank">Composition nutritionnelle des feuilles de Moringa oleifera</a>
+-&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5820334/" rel="" target="_blank">Moringa&nbsp;Genus: A Review of Phytochemistry and Pharmacology, Nur Zahirah Abd Rani,&nbsp;Khairana Husain, Endang Kumolosasi, 2018</a>
+-&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4490473/" rel="" target="_blank">Cultivation, Genetic, Ethnopharmacology, Phytochemistry and Pharmacology of&nbsp;Moringa oleifera&nbsp;Leaves: An Overview&nbsp;; Alessandro Leone, Alberto Spada, Alberto Battezzati&nbsp;; 2015</a></p>
+            </div>
+            
+    
+
+<div class="doc-menu-social doc-my-3 doc-ml-neg-3 doc-mr-neg-3 doc-ml-neg-md-0 doc-mr-neg-md-0">
+    <span class="doc-text-sm">Partager sur :</span>
+    <div class="doc-menu-social__share text-right">
+        <a
+                class="doc-social-btn"
+                href="https://www.facebook.com/dialog/share?app_id=290600267704798&display=popup&href=https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa"
+                target="_blank"
+                data-toggle="tooltip"
+        >
+            <i class="doc-icon-facebook-circle"></i>
+        </a>
+        <a
+                class="doc-social-btn"
+                href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.doctissimo.fr%2Fnutrition%2Fsante-dans-l-assiette%2Fsecrets-des-aliments-sante%2Fbienfaits-moringa&amp;text=Les+bienfaits+du+moringa+%40doctissimo"
+                target="_blank"
+                data-toggle="tooltip"
+        >
+            <i class="doc-icon-twitter-circle"></i>
+        </a>
+        <a
+                class="doc-social-btn whatsapp"
+                role="button"
+                target="_blank"
+                data-toggle="tooltip"
+                data-text="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa"
+        >
+            <i class="doc-icon-whatsapp-circle"><span class="path1"></span><span class="path2"></span></i>
+        </a>
+        <a
+                class="doc-social-btn"
+                href="//www.pinterest.com/pin/create/button/?url=https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/secrets-des-aliments-sante/bienfaits-moringa&media=https://resize.prod.docfr.doc-media.fr/rcrop/720,420,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-moringa-5ef58ac47c43e673.jpeg&description=Les%20bienfaits%20du%20moringa"
+                target="_blank"
+                data-toggle="tooltip"
+        >
+            <i class="doc-icon-pinterest-circle"></i>
+        </a>
+        <a
+                class="doc-social-btn"
+                href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.doctissimo.fr%2Fnutrition%2Fsante-dans-l-assiette%2Fsecrets-des-aliments-sante%2Fbienfaits-moringa"
+                target="_blank"
+                data-toggle="tooltip"
+        >
+            <i class="doc-icon-linkedin-with-circle"></i>
+        </a>
+    </div>
+</div>
+</div>
+
+                                                        </div>
+                                                    <div id="right-col" class="col-md-4">
+                                
+                                                                            
+<div id="300_atf-col">
+    <script type="text/javascript">
+        var ads_element_container = document.getElementById('300_atf-col');
+
+        if( device !== 'desktop' && true) {
+            var ad_header = document.createElement('div');
+            ad_header.className = 'doc-ad-header';
+            ad_header.innerText = 'La suite après cette publicité';
+            var parent_div = ads_element_container.parentNode;
+            parent_div.insertBefore(ad_header, ads_element_container);
+        }
+
+        if (
+                                    device !== 'mobile'
+                     && device !== 'tablette'                        ) {
+            var ads_element_300_atf = document.createElement('div');
+            ads_element_300_atf.setAttribute('data-ad', '300_atf');
+            ads_element_300_atf.setAttribute('data-ad-cls', 'keep');
+            ads_element_container.appendChild(ads_element_300_atf);
+        }
+    </script>
+</div>
+                                                                                                </div>
+                                                            </div>
+                    <div class="doc-my-2">
+        <div id="taboola-below-article-thumbnails" data-ad-sticky-unstick-to="#pegasus_banner_atf"></div>
+
+                            <div class="col-md-12">
+                <div class="d-md-flex justify-content-center">
+                    <div class="col-md-8">
+                        <!-- ESI - video player - doc: https://www.doctissimo.fr/esi/video-player?context=article&position=BTF&startOnSight=0&videoid=646654 -->
+            <!-- ESI - video player - auf: https://dfp.doctissimo.fr/reloaded/esi/videoplayer.php?context=article&position=BTF&startOnSight=0&videoid=646654 --><!-- ESI - VideoPlayer : http://dfp.doctissimo.fr/reloaded/esi/videoplayer.php?context=article&position=BTF&startOnSight=0&videoid=646654 -->
+
+<link href="https&#x3A;&#x2F;&#x2F;geo.dailymotion.com" rel="dns-prefetch">
+<style>/** https://dfp.doctissimo.fr/reloaded/static/Front/Component/videoPlayer/dist/unify-videoplayer-bundle.2.1.20.css?v=202210041021 **/ @charset "UTF-8";.vjs-ad-playing video{z-index:1}.vjs-ad-playing .ima-ad-container{opacity:1 !important}.vjs-ad-playing .ima-ad-container iframe{z-index:1111}.vjs-ad-playing .ima-ad-container .ima-controls-div{z-index:10000}.sticky-player .dailymotion-player-root{padding-bottom:0 !important}@-webkit-keyframes sticky{0%{opacity:0}100%{opacity:1}}@-moz-keyframes sticky{0%{opacity:0}100%{opacity:1}}@-ms-keyframes sticky{0%{opacity:0}100%{opacity:1}}@-o-keyframes sticky{0%{opacity:0}100%{opacity:1}}@keyframes sticky{0%{opacity:0}100%{opacity:1}}.video-wrapper.sticky-player>iframe{width:100%;height:100%}[hidden]{display:none !important}.sticky-flying-layout{width:100%}.sticky-flying-layout .sticky-buttons-bar{height:40px !important;position:absolute;top:-45px;width:100%;display:flex;flex-direction:row;justify-content:flex-end}.sticky-flying-layout .sticky-buttons-bar button{border:none;cursor:pointer;margin-left:5px;text-align:center}.sticky-flying-layout .sticky-buttons-bar button.close{height:25px;position:relative;top:15px;background:none}.sticky-flying-layout .sticky-buttons-bar button.close:focus{background:none}.sticky-flying-layout .video-player-sticky-custom-btn{font-size:24px;height:40px;opacity:0.5;text-align:right;text-decoration:none;width:40px;z-index:2000001}.sticky-flying-layout .video-player-sticky-custom-btn:hover, .sticky-flying-layout .video-player-sticky-custom-btn.gotoplayer{opacity:1}.sticky-flying-layout .video-player-sticky-custom-btn.close:before{content:"✖"}.sticky-flying-layout .video-player-sticky-bg{background-color:#f2f2f2;padding-top:56.25%;width:100%}.sticky-flying-layout .sticky-player.sticky-top{-webkit-box-shadow:#000 0 0 4px;-moz-box-shadow:#000 0 0 4px;box-shadow:#000 0 0 4px;height:56.25vw;width:100vw;top:52px;position:fixed;z-index:2000000;margin-left:auto;margin-right:auto}.sticky-flying-layout .sticky-player.sticky-top>div{height:56.25vw;width:100vw}.sticky-flying-layout .sticky-player.sticky-top-right{-webkit-animation-name:sticky;-moz-animation-name:sticky;-ms-animation-name:sticky;-o-animation-name:sticky;animation-name:sticky;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-out;-moz-animation-timing-function:ease-out;-ms-animation-timing-function:ease-out;-o-animation-timing-function:ease-out;animation-timing-function:ease-out;height:90px;width:160px;-webkit-box-shadow:#000 0 0 4px;-moz-box-shadow:#000 0 0 4px;box-shadow:#000 0 0 4px;position:fixed;top:10px;right:10px;z-index:2000000}.sticky-flying-layout .sticky-player.sticky-top-right>div{height:90px;width:160px}.sticky-flying-layout .sticky-player.sticky-bottom-right{-webkit-animation-name:sticky;-moz-animation-name:sticky;-ms-animation-name:sticky;-o-animation-name:sticky;animation-name:sticky;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-out;-moz-animation-timing-function:ease-out;-ms-animation-timing-function:ease-out;-o-animation-timing-function:ease-out;animation-timing-function:ease-out;height:90px;width:160px;-webkit-box-shadow:#000 0 0 4px;-moz-box-shadow:#000 0 0 4px;box-shadow:#000 0 0 4px;bottom:10px;position:fixed;right:10px;z-index:2000000}.sticky-flying-layout .sticky-player.sticky-bottom-right>div{height:90px;width:160px}.sticky-flying-layout .sticky-player.fix-width-sticky-bottom-right{height:90px;width:160px}.sticky-flying-layout .sticky-player.fix-width-sticky-bottom-right>div{height:90px;width:160px}@media (min-width: 768px){.sticky-flying-layout .sticky-player.sticky-bottom-right, .sticky-flying-layout .sticky-player.fix-width-sticky-bottom-right, .sticky-flying-layout .sticky-player.sticky-top-right, .sticky-flying-layout .sticky-player.sticky-top{height:185.625px;width:330px}.sticky-flying-layout .sticky-player.sticky-bottom-right > div, .sticky-flying-layout .sticky-player.fix-width-sticky-bottom-right > div, .sticky-flying-layout .sticky-player.sticky-top-right > div, .sticky-flying-layout .sticky-player.sticky-top>div{height:185.625px;width:330px}.sticky-flying-layout .sticky-player.flying-sticky-large.sticky-bottom-right, .sticky-flying-layout .sticky-player.flying-sticky-large.fix-width-sticky-bottom-right, .sticky-flying-layout .sticky-player.flying-sticky-large.sticky-top-right, .sticky-flying-layout .sticky-player.flying-sticky-large.sticky-top{height:299.8125px;width:533px}.sticky-flying-layout .sticky-player.flying-sticky-large.sticky-bottom-right > div, .sticky-flying-layout .sticky-player.flying-sticky-large.fix-width-sticky-bottom-right > div, .sticky-flying-layout .sticky-player.flying-sticky-large.sticky-top-right > div, .sticky-flying-layout .sticky-player.flying-sticky-large.sticky-top>div{height:299.8125px;width:533px}}.sticky-banner-layout{width:100%}.sticky-banner-layout .video-player-sticky-bg{background-color:#f2f2f2;padding-top:56.25%;width:100%}.sticky-banner-layout.position-top .sticky-player{top:0}.sticky-banner-layout.position-top .sticky-player sticky-content-wrapper{box-shadow:-2px -4px 10px 3px rgba(150, 150, 150, 0.75)}.sticky-banner-layout.position-bottom .sticky-player{bottom:0}.sticky-banner-layout.position-bottom .sticky-player sticky-content-wrapper{box-shadow:2px 4px 10px 3px rgba(150, 150, 150, 0.75)}.sticky-banner-layout .sticky-player{z-index:2000000;height:10vh;width:100vw;position:fixed;left:0;display:flex;flex-direction:column}@media screen and (orientation: portrait){.sticky-banner-layout .sticky-player.mobile{height:20vh}}@media screen and (orientation: landscape){.sticky-banner-layout .sticky-player.mobile{height:50vh}}.sticky-banner-layout .sticky-player sticky-content-wrapper{background:white;display:flex;flex-direction:row;flex:1;height:100%}.sticky-banner-layout .sticky-player sticky-content-wrapper>div{flex:1;height:100%}.sticky-banner-layout .sticky-player buttons-bar{display:flex;flex-direction:row;align-content:space-between;justify-content:space-between;position:absolute;top:0;right:0;left:0;z-index:100000}.sticky-banner-layout .sticky-player buttons-bar .close{cursor:pointer;margin-right:5px;height:25px;height:25px}.sticky-banner-layout .sticky-player buttons-bar .close:before{content:"✖"}.sticky-banner-layout .sticky-player buttons-bar button{width:40px;height:40px;color:white;background:none;font-size:large;border:none}.sticky-banner-layout .sticky-player .np_Controls-row--top .np_ButtonLogo, .sticky-banner-layout .sticky-player .np_Controls-row--top .transit{display:none}.sticky-banner-layout .sticky-player .np_ButtonUnmute{position:absolute;top:5px !important;left:40px !important}.sticky-banner-layout .sticky-player .controls_layer_1{z-index:99999 !important}.sticky-banner-layout.video-infos-displayed .sticky-player sticky-video-infos{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:300;padding:10px}.sticky-banner-layout.video-infos-displayed .sticky-player sticky-video-infos .video-title{text-align:center;display:-webkit-box;max-width:200px;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.sticky-banner-layout.video-infos-displayed .sticky-player buttons-bar .close{color:black;text-align:right;font-size:0.8rem}.sticky-buttons-bar button{padding:0}.sticky-buttons-bar button.video-player-sticky-custom-btn:focus{background:buttonface}.sticky-buttons-bar button.close{width:25px;height:25px}.video-wrapper{width:100%}.video-wrapper>.jwplayer{overflow:visible}.video-wrapper{height:0;position:relative}.video-wrapper.sticky-player.ratio-16-9{padding-bottom:0}.video-wrapper.sticky-player.ratio-1-1{padding-bottom:0}.video-wrapper.sticky-player.ratio-4-3{padding-bottom:0}.video-wrapper.sticky-player.ratio-3-2{padding-bottom:0}.video-wrapper.sticky-player.ratio-8-5{padding-bottom:0}.video-wrapper.ratio-16-9{padding-bottom:56.25%}.video-wrapper.ratio-16-9 .dailymotion-player-root{padding-bottom:56.25%}.video-wrapper.ratio-1-1{padding-bottom:100%}.video-wrapper.ratio-1-1 .dailymotion-player-root{padding-bottom:100%}.video-wrapper.ratio-4-3{padding-bottom:75%}.video-wrapper.ratio-4-3 .dailymotion-player-root{padding-bottom:75%}.video-wrapper.ratio-3-2{padding-bottom:66.66%}.video-wrapper.ratio-3-2 .dailymotion-player-root{padding-bottom:66.66%}.video-wrapper.ratio-8-5{padding-bottom:62.5%}.video-wrapper.ratio-8-5 .dailymotion-player-root{padding-bottom:62.5%}.video-wrapper iframe, .video-wrapper video{position:absolute;top:0;left:0;width:100%;height:100%}.video-wrapper video{width:100%;max-height:100%;background:black}</style>
+
+<script type="text/javascript">var videoPlayerUnifyInitDone = videoPlayerUnifyInitDone || false</script>
+<script type="text/javascript">var videoPlayerVersionNumber= videoPlayerVersionNumber || "2.1.20"</script>
+<script type="text/javascript">var videoPhpVars= videoPhpVars || {}; videoPhpVars["af_player_633bf8361e4241_72848159"]={"defaultAspectRatio":"16:9","dailymotionId":"x84k69m","dailymotionPlaylistID":"","allTechnos":{"videojs":{"id":"videojs","name":"Video JS"},"jwplayer":{"id":"jwplayer","name":"JWPlayer"},"dailymotion":{"id":"dailymotion","name":"Dailymotion"},"dailymotion-embed":{"id":"dailymotion-embed","name":"Dailymotion Embed"}},"allAdsTechnos":{"videojs":{"id":"ima","name":"IMA DFP"},"jwplayer":{"id":"jwplayer-ads","name":"JWPlayer"},"dailymotion":{"id":"dmp-ads","name":"Dailymotion"},"dailymotion-embed":{"id":"dmp-embed-ads","name":"Dailymotion"}},"techno":{"id":"dailymotion-embed","name":"Dailymotion Embed"},"adTechno":{"id":"dmp-embed-ads","name":"Dailymotion"},"isApp":false,"adSection":"","isComScoreTrackingEnabled":true,"isAdDisabled":false,"needPegasus":true,"playerId":"af_player_633bf8361e4241_72848159","videoId":646654,"context":"article","position":"BTF","aspectRatio":"16:9","adUnit":"\/229683329\/doctissimo_fr\/video\/preroll_BTF","pmad":3,"pmxd":51000,"height":"","muted":false,"title":"Les bienfaits du moringa","allowMultipleTinyAds":"true","siteId":51,"isCM":false,"hbVideoActive":false,"adScheduleId":"","adLabel":"Advertisement - Your video will load in","nextVideoLabel":"Next video in #SECONDS#","adPlayerLanguage":"FR","midrollActive":false,"minTimeMidroll":false,"jwpAdvertisingParameters":false,"adRule":true,"autoplay":{"startOnSight":false},"sticky":{"format":"flying","formatOptions":null,"stickTo":"","stickyBlockedDuration":"","scrollUp":false,"stickBothSide":true,"stickyFullMobile":false,"showBackToOriginalPositionButton":true,"waitForAdLoaded":false}}</script>
+<script type="text&#x2F;javascript" async="async" src="https&#x3A;&#x2F;&#x2F;geo.dailymotion.com&#x2F;libs&#x2F;player&#x2F;x8613.js"></script>
+<!-- ESI VIDEO 11/07/2022 15:45 -->
+<div id="af_player_633bf8361e4241_72848159-container" class="af-videoplayer video-wrapper ratio-16-9">
+	<video id="af_player_633bf8361e4241_72848159" class=""  poster="https://assets.afcdn.com/video51/20210930/v_646654_w854h480c1.webp" preload="none" controls playsinline >
+					<source src="https://assets.afcdn.com/video51/20210930/v_646654.m3u8" type="application/x-mpegURL">
+					<source src="https://assets.afcdn.com/video51/20210930/v_646654_HD.mp4" type="video/mp4">
+					<source src="https://assets.afcdn.com/video51/20210930/v_646654_sd.mp4" type="video/mp4">
+				<p class="vjs-no-js">
+			Your browser cannot play this video.		</p>
+	</video>
+</div>
+<div data-ad="preroll_BTF" data-ad-playerid="af_player_633bf8361e4241_72848159"></div>
+
+<script src="https://static.afcdn.com/reldocfr/Front/Component/videoPlayer/dist/nomodule/unify-videoplayer-dailymotion-embed-bundle.2.1.20.iife.min.js" async defer></script>
+
+
+
+                    </div>
+                </div>
+            </div>
+        
+        <div class="col-md-8">
+                                                        
+    <div class="doc-savoirplus doc-list doc-my-5 doc-my-md-6 ">
+                                
+            <div class="doc-savoirplus__section ">
+                                    <span>Discutez-en avec la communauté</span>
+                    <ul><li><a href="https://forum.doctissimo.fr/nutrition/alimentation-sante/liste_sujet-1.htm" rel="" target="">Forum Alimentation et sant&eacute;</a></li></ul>
+                            </div>
+            </div>
+                    </div>
+
+        
+        <div class="col-md-12">
+            <div class="doc-my-5 doc-my-md-6">
+                
+                
+        <div class="doc-recommendations doc-recommendations--bottom">
+                    <div class="doc-slider doc-slider--js doc-slider--js-3">
+                <div class="doc-slider__head">
+                    <div class="title title--sm">À voir aussi</div>
+                    <div class="controls">
+                        <span class="controls__prev"><i class="doc-icon-arrow-left"></i></span>
+                        <span class="controls__next"><i class="doc-icon-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="doc-slider__container">
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/4/bienfaits-eau-citronnee-df3d060af07e56d1.jpeg"
+                    loading="lazy"
+                                alt="Eau citronnée : 10 bienfaits santé et minceur"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/4/bienfaits-eau-citronnee-df3d060af07e56d1.jpeg" alt="Eau citronnée : 10 bienfaits santé et minceur" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-bienetre strip-article-nutrition"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/eau/bienfaits-eau-citronnee"
+               title="Eau citronnée : 10 bienfaits santé et minceur" >Eau citronnée : 10 bienfaits santé et minceur</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/8/flocon-avoine-5eee42978732ce54.jpeg"
+                    loading="lazy"
+                                alt="Avoine - Bénéfices de l&#039;avoine pour la santé"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/8/flocon-avoine-5eee42978732ce54.jpeg" alt="Avoine - Bénéfices de l&#039;avoine pour la santé" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Santé</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-sante strip-article-sante"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/html/nutrition/aliments/articles/14957-avoine.htm"
+               title="Avoine - Bénéfices de l&#039;avoine pour la santé" >Avoine - Bénéfices de l'avoine pour la santé</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/3/the-matcha-ccc3df128c628ad7.jpeg"
+                    loading="lazy"
+                                alt="Thé matcha : vertus de la poudre de matcha et recettes"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/3/the-matcha-ccc3df128c628ad7.jpeg" alt="Thé matcha : vertus de la poudre de matcha et recettes" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-bienetre strip-article-nutrition"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/famille-d-aliments/the-et-sante/the-matcha"
+               title="Thé matcha : vertus de la poudre de matcha et recettes" >Thé matcha : vertus de la poudre de matcha et recettes</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/4/mache-qualites-nutritionnelles-d787751ff80784cc.jpeg"
+                    loading="lazy"
+                                alt="Salade : les bienfaits de la mâche"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/4/mache-qualites-nutritionnelles-d787751ff80784cc.jpeg" alt="Salade : les bienfaits de la mâche" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-bienetre strip-article-nutrition"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/html/nutrition/mag_2004/mag0109/nu_7266_mache_qualites_nutritionnelles.htm"
+               title="Salade : les bienfaits de la mâche" >Salade : les bienfaits de la mâche</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/4/sirop-agave-18455390147c1ed0.jpeg"
+                    loading="lazy"
+                                alt="Bienfaits du sirop d’agave, utilisation et conseils nutritionnels"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/4/sirop-agave-18455390147c1ed0.jpeg" alt="Bienfaits du sirop d’agave, utilisation et conseils nutritionnels" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-bienetre strip-article-nutrition"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/edulcorants/edulcorants-et-les-faux-sucres/sirop-agave"
+               title="Bienfaits du sirop d’agave, utilisation et conseils nutritionnels" >Bienfaits du sirop d’agave, utilisation et conseils nutritionnels</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/4/beurre-cacahuete-8f446ea9d2495aca.jpeg"
+                    loading="lazy"
+                                alt="Beurre de cacahuète : ses bienfaits et comment le choisir"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/4/beurre-cacahuete-8f446ea9d2495aca.jpeg" alt="Beurre de cacahuète : ses bienfaits et comment le choisir" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-bienetre strip-article-nutrition"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/beurre-cacahuete"
+               title="Beurre de cacahuète : ses bienfaits et comment le choisir" >Beurre de cacahuète : ses bienfaits et comment le choisir</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-des-amandes-3a6cb2ab7d504d19.jpeg"
+                    loading="lazy"
+                                alt="Les bienfaits de l&#039;amande sur la santé"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2022/7/3/bienfaits-des-amandes-3a6cb2ab7d504d19.jpeg" alt="Les bienfaits de l&#039;amande sur la santé" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-bienetre strip-article-nutrition"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/sante-dans-l-assiette/bienfaits-des-amandes"
+               title="Les bienfaits de l&#039;amande sur la santé" >Les bienfaits de l'amande sur la santé</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                            <div class="doc-slider__container__item">
+                                        
+        
+    <div class="card ">
+        <div class="card__img-wrapper ">
+            <img
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2021/6/5/gettyimages-1279164555-cropped-1.jpg"
+                    loading="lazy"
+                                alt="Vinaigre de cidre : bienfaits, utilisation, santé"
+                class="doc-img-responsive-100 rounded-lg lazyload"
+                                    width="450"
+                                                    height="340"
+                            />
+                            <noscript>
+                    <img src="https://resize.prod.docfr.doc-media.fr/rcrop/450,340,center-middle/ext/eac4ff34/content/2021/6/5/gettyimages-1279164555-cropped-1.jpg" alt="Vinaigre de cidre : bienfaits, utilisation, santé" class="doc-img-responsive-100 rounded-lg" />
+                </noscript>
+            
+                    </div>
+        <div class="card__body">
+            <div>
+                                    <span>Nutrition</span>
+                
+                                    <span>|</span>
+                
+                                    <span class="color-grey-medium">Article</span>
+                
+                                    <span class="strip bg-color-category-bienetre strip-article-nutrition"></span>
+                            </div>
+                            <span class="h5 card__body__title">
+                        <a href="https://www.doctissimo.fr/nutrition/famille-daliments/lipides/les-bienfaits-du-vinaigre-de-cidre/211614_ar.html"
+               title="Vinaigre de cidre : bienfaits, utilisation, santé" >Vinaigre de cidre : bienfaits, utilisation, santé</a>
+                            </span>
+                                </div>
+    </div>
+
+                        </div>
+                                    </div>
+            </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+            
+        </div>
+
+        
+<div id="doc-newsletter-optin-senior" class="doc-modal-layout d-none">
+
+    <div class="doc-modal shadow-lg rounded-lg text-center doc-p-3">
+        <p class="right" data-action="close" data-close-target="doc-newsletter-optin-senior"><i class="doc-icon-close"></i></p>
+        <!-- Before sending data -->
+        <div id="doc-newsletter-optin-senior--form">
+
+            <div class="d-block text-center"><img src="https://cdn.prod.docfr.doc-media.fr/build/images/illustration/newsletter-senior.svg" alt="" loading="lazy"></div>
+
+            <span class="h3">Newsletter Bien Vieillir</span>
+
+            <p class="doc-text-sm">Recevez nos dernières actualités pour rester en forme</p>
+
+            <form action="/newsletter-optin/262" method="post">
+                <input class="d-block border-grey-regular doc-py-0 doc-px-2 doc-my-1 doc-input-text text-center"
+                       name="newsletter-email" type="email" placeholder="Votre email" required>
+
+                <button class="d-block doc-btn doc-btn--rounded doc-btn--primary doc-my-1"
+                        type="submit">S’inscrire
+                </button>
+            </form>
+
+            <p class="doc-text-xxs color-grey-regular text-justify">
+                <a href="/" target="_blank">Doctissimo</a>, met en oeuvre des traitements de données personnelles, y compris des informations renseignées dans le formulaire ci-dessus,
+                pour vous adresser les newsletters auxquelles vous vous êtes abonnés et, sous réserve de vos choix en matière de cookies, rapprocher ces données avec d’autres données
+                vous concernant à des fins de segmentation client sur la base de laquelle sont personnalisées nos contenus et publicités. Davantage d’informations vous seront fournies
+                à ce sujet dans l’email qui vous sera adressé pour confirmer votre inscription.
+            </p>
+        </div>
+
+        <!-- After sending data -->
+        <div id="doc-newsletter-optin-senior--submitted" class="d-none text-center doc-py-3">
+            <div class="d-block"><img src="https://cdn.prod.docfr.doc-media.fr/build/images/refonte/newsletters/newsletter-img.png" alt="" width="50%" loading="lazy"></div>
+            <div>
+                <span class="h3" id="doc-newsletter-optin-senior--submitted-message">Merci de votre confiance</span>
+                <p>Découvrez toutes nos autres newsletters.</p>
+                <a href="/newsletters" class="d-block doc-btn doc-btn--rounded doc-btn--primary doc-py-1">Découvrir</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        <div class="doc-mb-4 doc-mb-md-1">
+                <footer>
+    <div class="container">
+
+                <div class="text-center">
+            <div class="doc-mb-2"><img class="logo" width="200" height="32" title="Doctissimo : Santé et bien être avec Doctissimo" alt="Doctissimo : Santé et bien être avec Doctissimo" src="https://cdn.prod.docfr.doc-media.fr/build/images/refonte/logos/doctissimo.svg"></div>
+            <div class="doc-py-1"><span>Suivez-nous sur :</span></div>
+            <div class="social doc-py-1">
+                <a href="https://fr-fr.facebook.com/doctissimo/" target="_blank" rel="noopener noreferrer" title="Facebook Doctissimo"><i class="doc-icon-facebook-circle"></i></a>
+                <a href=" https://www.pinterest.fr/doctissimo/" target="_blank" rel="noopener noreferrer" title="Pinterest Doctissimo"><i class="doc-icon-pinterest-circle"></i></a>
+                <a href="https://www.instagram.com/doctissimo/?hl=fr" target="_blank" rel="noopener noreferrer" title="Instagram Doctissimo"><i class="doc-icon-instagram-circle"></i></a>
+                <a href="https://www.youtube.com/user/Doctissimo" target="_blank" rel="noopener noreferrer" title="Youtube Doctissimo"><i class="doc-icon-youtube-circle"></i></a>
+                <a href="https://twitter.com/doctissimo" target="_blank" rel="noopener noreferrer" title="Twitter Doctissimo"><i class="doc-icon-twitter-circle"></i></a>
+                <a href="https://www.tiktok.com/@doctissimo" target="_blank" rel="noopener noreferrer" title="Tiktok Doctissimo"><i class="doc-icon-tik-tok"></i></a>
+                <a href="https://fr.linkedin.com/company/doctissimo.fr" target="_blank" rel="noopener noreferrer" title="LinkedIn Doctissimo"><i class="doc-icon-linkedin-with-circle"></i></a>
+            </div>
+        </div>
+
+        
+                    <div class="bg-color-blue-0 doc-p-3 doc-mt-1 d-flex align-items-center flex-wrap">
+        <span>Mentions légales&nbsp;:</span>
+        <div class="doc-p-1">
+                        <a href="javascript:Didomi.preferences.show()" title="Paramétrer les cookies">Paramétrer les cookies</a>
+                        <a href="https://www.doctissimo.fr/notice_legale.htm" title="Mentions légales">Mentions légales</a>
+            <a href="https://www.doctissimo.fr/equipe/charte/faq-abonnement" title="Vos choix concernant l’utilisation de cookies">Vos choix concernant l’utilisation de cookies</a>
+            <a href="https://www.doctissimo.fr/equipe/charte/charte-donnees-personnelles-cookies" title="Politique de protection des données personnelles">Politique de protection des données personnelles</a>
+            <a href="https://www.doctissimo.fr/equipe/chartes/conditions-generales-dabonnement/87f1be_ar.html" title="Conditions générales d’abonnement">Conditions générales d’abonnement</a>
+        </div>
+    </div>
+
+    </div>
+</footer>
+        </div>
+
+            <script defer src="https://cdn.prod.docfr.doc-media.fr/build/article.8be82fba.js" ></script>
+
+        <script defer src="https://cdn.prod.docfr.doc-media.fr/build/doctissimo_footer_tags.f7437635.js"></script>
+
+
+                                <div data-ad="oop"></div>
+            
+<script>
+    /*loadCss*/
+    !function(w){"use strict";var loadCSS=function(href,before,media){function ready(cb){return doc.body?cb():void setTimeout(function(){ready(cb)})}function loadCB(){ss.addEventListener&&ss.removeEventListener("load",loadCB),ss.media=media||"all"}var ref,doc=w.document,ss=doc.createElement("link");if(before)ref=before;else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1]}var sheets=doc.styleSheets;ss.rel="stylesheet",ss.href=href,ss.media="only x",ready(function(){ref.parentNode.insertBefore(ss,before?ref:ref.nextSibling)});var onloadcssdefined=function(cb){for(var resolvedHref=ss.href,i=sheets.length;i--;)if(sheets[i].href===resolvedHref)return cb();setTimeout(function(){onloadcssdefined(cb)})};return ss.addEventListener&&ss.addEventListener("load",loadCB),ss.onloadcssdefined=onloadcssdefined,onloadcssdefined(loadCB),ss};"undefined"!=typeof exports?exports.loadCSS=loadCSS:w.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+
+    /*link[rel=preload] polyfill*/
+    !function(w){if(w.loadCSS){var rp=loadCSS.relpreload={};if(rp.support=function(){try{return w.document.createElement("link").relList.supports("preload")}catch(e){return!1}},rp.poly=function(){for(var links=w.document.getElementsByTagName("link"),i=0;i<links.length;i++){var link=links[i];"preload"===link.rel&&"style"===link.getAttribute("as")&&(w.loadCSS(link.href,link),link.rel=null)}},!rp.support()){rp.poly();var run=w.setInterval(rp.poly,300);w.addEventListener&&w.addEventListener("load",function(){w.clearInterval(run)}),w.attachEvent&&w.attachEvent("onload",function(){w.clearInterval(run)})}}}(this);
+</script>
+</body>
+</html>
